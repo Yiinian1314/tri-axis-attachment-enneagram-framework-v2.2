@@ -7,10 +7,10 @@
 #   4. 运行: bash _evidence/一键推送.sh
 
 # ============= 在这里改 =============
-YOUR_NAME="[你的真实姓名]"
-YOUR_EMAIL="[你的真实邮箱]"
-GITHUB_USER="[你的 GitHub 用户名]"
-GITEE_USER="[你的 Gitee 用户名]"
+YOUR_NAME="邢峰"
+YOUR_EMAIL="fqin8688@gmail.com"
+GITHUB_USER="Yiinian1314"
+GITEE_USER="yiinian1314"
 # ===================================
 
 set -e
