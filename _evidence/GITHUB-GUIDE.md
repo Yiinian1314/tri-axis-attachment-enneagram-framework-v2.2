@@ -120,7 +120,7 @@ git push -u origin main
 
 如果用 SSH:
 ```bash
-git remote add origin git@github.com:[你的用户名]/attachment-enneagram-consultation-v2.git
+git remote add origin git@github.com:[你的用户名]/tri-axis-attachment-enneagram-framework-v2.2.git
 git push -u origin main
 ```
 

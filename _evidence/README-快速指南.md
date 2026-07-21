@@ -64,7 +64,7 @@ Git 提交哈希 (Commit Hash):
 
 ```bash
 # 1. 在 GitHub 创建空仓库(2 分钟)
-#    仓库名: attachment-enneagram-consultation-v2
+#    仓库名: tri-axis-attachment-enneagram-framework-v2.2
 #    可见性: Public(推荐)
 
 # 2. 重要: 改回你的真实姓名邮箱(我们刚才是用临时账户提交的)
@@ -77,7 +77,7 @@ git config --global user.email "[你的真实邮箱]"
 git commit --amend --reset-author --no-edit
 
 # 4. 添加远程并推送
-git remote add origin https://github.com/[你的用户名]/attachment-enneagram-consultation-v2.git
+git remote add origin https://github.com/[你的用户名]/tri-axis-attachment-enneagram-framework-v2.2.git
 git push -u origin main
 ```
 
@@ -85,7 +85,7 @@ git push -u origin main
 
 类似步骤 2,只是远程地址换成 Gitee:
 ```bash
-git remote add gitee https://gitee.com/[你的用户名]/attachment-enneagram-consultation-v2.git
+git remote add gitee https://gitee.com/[你的用户名]/tri-axis-attachment-enneagram-framework-v2.2.git
 git push -u gitee main
 ```
 
