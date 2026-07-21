@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>依恋 x 九型 - 来访者自助手册</title>
+<style>
+  @page { size: A4; margin: 2cm 2cm 2.5cm 2cm; }
+  @page :first { margin: 0; }
+
+  :root {
+    --primary: #1a2238;
+    --secondary: #4a5568;
+    --accent: #e2725b;
+    --light: #d4c5b9;
+    --bg: #faf6f1;
+    --white: #ffffff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { font-size: 11pt; }
+
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    color: var(--primary);
+    line-height: 1.7;
+    background: white;
+  }
+
+  /* COVER */
+  .cover {
+    width: 100%;
+    height: 100vh;
+    page-break-after: always;
+    background: var(--bg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4cm 3cm;
+  }
+  .cover-stripe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1.2cm;
+    height: 100%;
+    background: var(--accent);
+  }
+  .cover-eyebrow {
+    font-size: 11pt;
+    color: var(--secondary);
+    letter-spacing: 0.5em;
+    margin-bottom: 1em;
+  }
+  .cover-title {
+    font-size: 56pt;
+    font-weight: bold;
+    color: var(--primary);
+    line-height: 1.2;
+    margin-bottom: 0.3em;
+  }
+  .cover-subtitle {
+    font-size: 22pt;
+    color: var(--primary);
+    margin-bottom: 2em;
+  }
+  .cover-divider {
+    width: 4cm;
+    height: 2pt;
+    background: var(--accent);
+    margin-bottom: 2em;
+  }
+  .cover-desc {
+    font-size: 14pt;
+    color: var(--secondary);
+    line-height: 1.8;
+    max-width: 14cm;
+  }
+  .cover-meta {
+    position: absolute;
+    bottom: 3cm;
+    left: 3cm;
+    font-size: 10pt;
+    color: var(--secondary);
+  }
+  .cover-tag {
+    display: inline-block;
+    padding: 0.2em 0.8em;
+    background: var(--primary);
+    color: var(--bg);
+    font-size: 10pt;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  /* SECTIONS */
+  .section {
+    page-break-before: always;
+    padding-top: 0.5cm;
+  }
+  .section-num {
+    font-size: 11pt;
+    color: var(--accent);
+    letter-spacing: 0.4em;
+    margin-bottom: 0.3em;
+  }
+  .section-title {
+    font-size: 28pt;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 0.5em;
+    border-bottom: 2pt solid var(--accent);
+    padding-bottom: 0.3em;
+  }
+  .section-intro {
+    font-size: 12pt;
+    color: var(--secondary);
+    margin-bottom: 1.5em;
+    line-height: 1.8;
+  }
+
+  h2 {
+    font-size: 18pt;
+    color: var(--primary);
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+    padding-left: 0.5em;
+    border-left: 4pt solid var(--accent);
+  }
+
+  h3 {
+    font-size: 14pt;
+    color: var(--primary);
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+  }
+
+  p {
+    margin-bottom: 0.8em;
+    text-align: justify;
+  }
+
+  /* CARDS */
+  .card {
+    background: var(--white);
+    border: 1pt solid var(--light);
+    border-left: 4pt solid var(--accent);
+    padding: 0.8em 1em;
+    margin: 0.8em 0;
+    page-break-inside: avoid;
+  }
+  .card-title {
+    font-size: 13pt;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 0.3em;
+  }
+  .card-body {
+    font-size: 11pt;
+    color: var(--secondary);
+    line-height: 1.7;
+  }
+
+  .card-dark {
+    background: var(--primary);
+    color: var(--bg);
+    border: none;
+    border-left: 4pt solid var(--accent);
+  }
+  .card-dark .card-title { color: var(--accent); }
+  .card-dark .card-body { color: var(--bg); }
+
+  .quote {
+    background: var(--bg);
+    border-left: 4pt solid var(--accent);
+    padding: 1em 1.2em;
+    margin: 1em 0;
+    font-style: italic;
+    color: var(--primary);
+    font-size: 12pt;
+  }
+
+  /* TABLES */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    page-break-inside: avoid;
+    font-size: 10.5pt;
+  }
+  th {
+    background: var(--primary);
+    color: var(--bg);
+    padding: 0.5em 0.7em;
+    text-align: left;
+    font-weight: bold;
+  }
+  td {
+    padding: 0.5em 0.7em;
+    border-bottom: 1pt solid var(--light);
+    vertical-align: top;
+  }
+  tr:nth-child(even) { background: var(--bg); }
+
+  /* LISTS */
+  ul, ol { margin: 0.8em 0 0.8em 1.5em; }
+  li { margin-bottom: 0.4em; }
+
+  /* EXERCISE BOX */
+  .exercise {
+    background: #fff5ef;
+    border: 1pt dashed var(--accent);
+    border-radius: 4pt;
+    padding: 1em 1.2em;
+    margin: 1.2em 0;
+    page-break-inside: avoid;
+  }
+  .exercise-label {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 11pt;
+    margin-bottom: 0.4em;
+    letter-spacing: 0.1em;
+  }
+
+  /* SCALE */
+  .scale {
+    margin: 0.8em 0;
+  }
+  .scale-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4em;
+    font-size: 10.5pt;
+  }
+  .scale-num {
+    width: 1.5em;
+    color: var(--accent);
+    font-weight: bold;
+  }
+  .scale-text {
+    flex: 1;
+    color: var(--primary);
+  }
+  .scale-line {
+    margin-left: 1em;
+    flex: 0 0 8em;
+  }
+
+  /* GRID */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8em;
+    margin: 1em 0;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.6em;
+    margin: 1em 0;
+  }
+
+  /* PAGE BREAKS */
+  .pb { page-break-before: always; }
+
+  /* FOOTER */
+  .page-footer {
+    position: fixed;
+    bottom: 0.5cm;
+    left: 2cm;
+    right: 2cm;
+    font-size: 9pt;
+    color: var(--secondary);
+    text-align: center;
+    border-top: 1pt solid var(--light);
+    padding-top: 0.3em;
+  }
+  /* Page numbers in footer via Chromium auto generation */
+
+  /* TOC */
+  .toc {
+    margin: 1.5em 0;
+  }
+  .toc-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em 0;
+    border-bottom: 1pt dotted var(--light);
+    font-size: 11pt;
+  }
+  .toc-item .num { color: var(--accent); font-weight: bold; }
+  .toc-item .title { color: var(--primary); }
+  .toc-item .page { color: var(--secondary); }
+
+  /* HIGHLIGHT */
+  .hl { color: var(--accent); font-weight: bold; }
+  .em { font-style: italic; color: var(--secondary); }
+
+  /* CALLOUT */
+  .callout {
+    background: var(--primary);
+    color: var(--bg);
+    padding: 1em 1.2em;
+    margin: 1em 0;
+    page-break-inside: avoid;
+  }
+  .callout .label {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    font-size: 10pt;
+    letter-spacing: 0.2em;
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER ==================== -->
+<div class="cover">
+  <div class="cover-stripe"></div>
+  <div class="cover-eyebrow">A SELF-HELP WORKBOOK</div>
+  <div class="cover-title">依恋 x 九型</div>
+  <div class="cover-subtitle">看见自己, 走出重复</div>
+  <div class="cover-divider"></div>
+  <div class="cover-desc">
+    一本写给"在关系里反复受伤, 不知道为什么"的人的工作手册。<br>
+    从依恋和人格两个维度, 帮你看见自己<br>
+    怎么反应, 为什么这样反应, 然后主动选择。
+  </div>
+  <div style="margin-top: 2em;">
+    <span class="cover-tag">依恋风格</span>
+    <span class="cover-tag">九型人格</span>
+    <span class="cover-tag">日常练习</span>
+    <span class="cover-tag">关系修复</span>
+  </div>
+  <div class="cover-meta">v1.0 &middot; 2026</div>
+</div>
+
+<!-- ==================== 致读者 ==================== -->
+<div class="section">
+  <div class="section-num">PREFACE</div>
+  <div class="section-title">致读者</div>
+  <div class="section-intro">
+    你是否有过这样的时刻: 明明很爱对方, 却用错了方式?
+    是否在亲密关系里, 反复陷入同一个剧本, 却不知道为什么?
+  </div>
+
+  <p>这本书, 不会让你立刻"变好"。但它会帮你看见: 你在关系里的某些反应, 其实不是你选的, 而是早年学会的"保护策略"。看见, 是改变的第一步。</p>
+
+  <h2>这本书能给你什么</h2>
+  <ul>
+    <li><span class="hl">看见模式</span> &mdash; 你在关系里是"追"的, "躲"的, 还是"又追又躲"的?</li>
+    <li><span class="hl">看见驱力</span> &mdash; 你为什么这么怕被抛弃, 或者这么怕被控制?</li>
+    <li><span class="hl">看见童年</span> &mdash; 这些模式, 是从哪里学来的?</li>
+    <li><span class="hl">练习新选择</span> &mdash; 在日常的小事里, 慢慢尝试不一样的反应。</li>
+  </ul>
+
+  <h2>这本书不能给你什么</h2>
+  <div class="card card-dark">
+    <div class="card-title">诚实说明</div>
+    <div class="card-body">
+      这本书不能替代专业心理咨询。如果你正在经历严重的情绪困扰, 关系暴力, 或自我伤害的念头, 请联系专业的心理咨询师或精神科医生。
+    </div>
+  </div>
+
+  <h2>怎么读这本书</h2>
+  <p>建议这样用:</p>
+  <ol>
+    <li>先做前面的两个自评, 找到自己的"位置"</li>
+    <li>读对应章节的"看见"部分, 不急着做练习</li>
+    <li>每天花 5-10 分钟做一个练习, 不要贪多</li>
+    <li>和伴侣一起读"在关系中练习"那章, 哪怕只是一起笑一下</li>
+    <li>遇到触动很深的部分, 把它记下来, 带到咨询里去谈</li>
+  </ol>
+
+  <div class="quote">
+    "你能陪自己走多远, 就已经是一件了不起的事。"
+  </div>
+</div>
+
+<!-- ==================== 目录 ==================== -->
+<div class="section">
+  <div class="section-num">CONTENTS</div>
+  <div class="section-title">目录</div>
+
+  <div class="toc">
+    <div class="toc-item"><span class="num">01</span><span class="title">认识你的依恋风格</span><span class="page">P.5</span></div>
+    <div class="toc-item"><span class="num">02</span><span class="title">认识你的九型主型</span><span class="page">P.9</span></div>
+    <div class="toc-item"><span class="num">03</span><span class="title">为什么我总是这样 &mdash; 看见模式</span><span class="page">P.13</span></div>
+    <div class="toc-item"><span class="num">04</span><span class="title">每天 10 分钟 &mdash; 日常练习</span><span class="page">P.18</span></div>
+    <div class="toc-item"><span class="num">05</span><span class="title">在关系中练习</span><span class="page">P.23</span></div>
+    <div class="toc-item"><span class="num">06</span><span class="title">何时需要专业帮助</span><span class="page">P.28</span></div>
+    <div class="toc-item"><span class="num">07</span><span class="title">附录: 工具与资源</span><span class="page">P.30</span></div>
+  </div>
+</div>
+
+<!-- ==================== 第1章:依恋风格 ==================== -->
+<div class="section">
+  <div class="section-num">CHAPTER 01</div>
+  <div class="section-title">认识你的依恋风格</div>
+  <div class="section-intro">
+    "依恋"是心理学家 Bowlby 提出的概念, 描述的是: 你在亲近的人面前, 是放松的, 还是紧绷的。
+    你在关系里"怎么反应", 不是天生的, 是早年学会的。
+  </div>
+
+  <h2>两个核心问题</h2>
+  <p>你的依恋风格, 可以用两个问题来定位:</p>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">问题一: 焦虑维度</div>
+      <div class="card-body">
+        我是不是总担心, 对方不够爱我?<br>
+        我是不是需要反复确认, 他还在?<br>
+        我是不是害怕被抛弃?
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">问题二: 回避维度</div>
+      <div class="card-body">
+        我是不是觉得靠近太累?<br>
+        我是不是更愿意自己一个人?<br>
+        我是不是害怕被控制或吞没?
+      </div>
+    </div>
+  </div>
+
+  <h2>快速自评 (0-10)</h2>
+  <p>请你凭第一反应打分, 不要想太多:</p>
+
+  <h3>焦虑维度</h3>
+  <div class="scale">
+    <div class="scale-row"><span class="scale-num">A1</span><span class="scale-text">我担心伴侣不像我爱他那样爱我</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">A2</span><span class="scale-text">我需要频繁的确认和保证</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">A3</span><span class="scale-text">我很难在关系中完全放松</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">A4</span><span class="scale-text">对方没回消息, 我会脑补最坏的可能</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">A5</span><span class="scale-text">吵架时, 我最怕的是"他不要我了"</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">A6</span><span class="scale-text">我经常在关系里感到"不够好"</span><span class="scale-line">____ / 10</span></div>
+  </div>
+  <p><strong>焦虑均值:</strong> (A1+A2+A3+A4+A5+A6) / 6 = <span class="hl">____</span></p>
+
+  <h3>回避维度</h3>
+  <div class="scale">
+    <div class="scale-row"><span class="scale-num">B1</span><span class="scale-text">我觉得靠近他人不太舒服</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">B2</span><span class="scale-text">我更愿意依靠自己, 不愿麻烦别人</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">B3</span><span class="scale-text">我害怕被拒绝, 所以不主动</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">B4</span><span class="scale-text">亲密升级时, 我本能想撤</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">B5</span><span class="scale-text">别人情绪激动时, 我想躲开</span><span class="scale-line">____ / 10</span></div>
+    <div class="scale-row"><span class="scale-num">B6</span><span class="scale-text">依赖别人让我觉得失去自由</span><span class="scale-line">____ / 10</span></div>
+  </div>
+  <p><strong>回避均值:</strong> (B1+B2+B3+B4+B5+B6) / 6 = <span class="hl">____</span></p>
+
+  <h2>看你的位置</h2>
+
+  <table>
+    <tr>
+      <th>象限</th>
+      <th>焦虑</th>
+      <th>回避</th>
+      <th>你的典型状态</th>
+    </tr>
+    <tr>
+      <td><strong>安全型</strong></td>
+      <td>低</td>
+      <td>低</td>
+      <td>"我值得被爱, 他人基本可靠"。能在亲近和独立间切换。</td>
+    </tr>
+    <tr>
+      <td><strong>焦虑型</strong></td>
+      <td>高</td>
+      <td>低</td>
+      <td>"我不够好, 需要不断确认爱"。黏附、追、情感激活。</td>
+    </tr>
+    <tr>
+      <td><strong>回避型</strong></td>
+      <td>低</td>
+      <td>高</td>
+      <td>"我不需要, 他人不可靠"。退缩、去激活、自我依赖。</td>
+    </tr>
+    <tr>
+      <td><strong>混乱型</strong></td>
+      <td>高</td>
+      <td>高</td>
+      <td>"我想要但我怕靠近会受伤"。推拉、戏剧化、创伤重演。</td>
+    </tr>
+  </table>
+
+  <div class="callout">
+    <div class="label">重要提醒</div>
+    依恋风格不是性格, 也不是不可改变。它是关系里的"情绪调节策略", 早期形成, 但可以在新的关系中被修复。
+  </div>
+
+  <h2>每种象限的身体信号</h2>
+  <p>留意你的身体, 它比你更早知道你在哪种模式里:</p>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">焦虑 / 混乱型</div>
+      <div class="card-body">心跳快 &middot; 喉咙紧 &middot; 手心出汗 &middot; 胃部绞紧 &middot; 难以入睡 &middot; 反刍思维</div>
+    </div>
+    <div class="card">
+      <div class="card-title">回避型</div>
+      <div class="card-body">肩膀紧 &middot; 呼吸浅 &middot; 目光回避 &middot; 胸口空 &middot; 解离感 &middot; 麻木</div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-label">练习 1.1 &middot; 觉察身体</div>
+    <p>下次你感到在关系里"不对劲"的时候, 停 30 秒, 问自己:</p>
+    <p style="margin-top: 0.5em;"><strong>"我的身体哪里, 最先有反应?"</strong></p>
+    <p>把答案写下来, 哪怕只是一个字: 胸、喉、胃、肩、背。</p>
+  </div>
+</div>
+
+<!-- ==================== 第2章:九型 ==================== -->
+<div class="section">
+  <div class="section-num">CHAPTER 02</div>
+  <div class="section-title">认识你的九型主型</div>
+  <div class="section-intro">
+    依恋告诉你"怎么反应", 九型人格告诉你"为什么这样反应"。
+    九型把人的核心驱力分成九种, 每种都有自己最深的恐惧和最想要的渴望。
+  </div>
+
+  <h2>九型速查表</h2>
+  <table>
+    <tr><th>类型</th><th>核心恐惧</th><th>核心渴望</th><th>一句话</th></tr>
+    <tr><td>1 完美型</td><td>不完美 / 错误</td><td>善良 / 正直</td><td>"我必须做对"</td></tr>
+    <tr><td>2 助人型</td><td>不被需要</td><td>被爱</td><td>"我必须被需要"</td></tr>
+    <tr><td>3 成就型</td><td>无价值</td><td>值得赞赏</td><td>"我必须成就"</td></tr>
+    <tr><td>4 浪漫型</td><td>平凡 / 无独特性</td><td>找到自我</td><td>"我必须独特"</td></tr>
+    <tr><td>5 观察型</td><td>无能 / 被侵占</td><td>有能力 / 有空间</td><td>"我必须自足"</td></tr>
+    <tr><td>6 疑惑型</td><td>无支持 / 被背叛</td><td>安全感</td><td>"我必须警觉"</td></tr>
+    <tr><td>7 享乐型</td><td>痛苦 / 被限制</td><td>自由 / 满足</td><td>"我必须快乐"</td></tr>
+    <tr><td>8 挑战型</td><td>被控制 / 被伤害</td><td>自我保护</td><td>"我必须掌控"</td></tr>
+    <tr><td>9 和平型</td><td>冲突 / 分离</td><td>平静 / 合一</td><td>"我必须平和"</td></tr>
+  </table>
+
+  <h2>找到自己的主型</h2>
+  <p>不要用"我是不是" 来判断, 用下面三个问题来接近:</p>
+
+  <div class="card">
+    <div class="card-title">问题 1: 童年剧本</div>
+    <div class="card-body">
+      "在小时候, 我觉得必须做到什么, 才能被爱 / 不被抛弃?"<br>
+      写出你的第一反应, 哪怕是模糊的。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">问题 2: 最不能忍受</div>
+    <div class="card-body">
+      "我最不能忍受自己身上发生什么?"<br>
+      这是核心恐惧的反面。<br>
+      注意: 不是"讨厌别人这样", 而是"如果我变成这样我会死"。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">问题 3: 自动化反应</div>
+    <div class="card-body">
+      "当我压力很大时, 我会怎么做?"<br>
+      注意你重复做的事, 那是你的"类型自动导航"。
+    </div>
+  </div>
+
+  <h2>主型与依恋的常见组合</h2>
+  <p>下表是临床最常见的组合, 如果你的组合在表里, 尤其值得对照阅读后面的章节:</p>
+  <table>
+    <tr><th>依恋象限</th><th>高亲和主型</th><th>中亲和主型</th></tr>
+    <tr><td>焦虑型</td><td>2号助人 / 6号疑惑</td><td>4号浪漫</td></tr>
+    <tr><td>回避型</td><td>5号观察 / 8号挑战</td><td>3号成就</td></tr>
+    <tr><td>混乱型</td><td>4号浪漫</td><td>1号 / 9号 失健康</td></tr>
+    <tr><td>安全型</td><td>7号 / 9号 健康</td><td>1号 / 3号 健康</td></tr>
+  </table>
+
+  <div class="callout">
+    <div class="label">提醒</div>
+    九型是一种倾向, 不是牢笼。但它确实塑造了你"想象亲密的方式"。
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-label">练习 2.1 &middot; 写下你的主型</div>
+    <p>基于上面的三个问题, 写下你猜的自己的主型:</p>
+    <p style="margin: 0.5em 0;"><strong>我猜自己是 ___ 号</strong></p>
+    <p>写下理由: 哪一条最像你?</p>
+    <p style="height: 4em; border: 1pt solid var(--light); margin-top: 0.5em;"></p>
+  </div>
+</div>
+
+<!-- ==================== 第3章:看见模式 ==================== -->
+<div class="section">
+  <div class="section-num">CHAPTER 03</div>
+  <div class="section-title">为什么我总是这样</div>
+  <div class="section-intro">
+    看清自己的"剧本", 不是为了自责, 而是为了松开它。
+    模式不是你的错, 但模式是你的责任。
+  </div>
+
+  <h2>早年的"等式"</h2>
+  <p>每个人的依恋风格和主型, 都来自一个早年的"等式"。找找看, 你的那一条是哪一句:</p>
+
+  <div class="card card-dark">
+    <div class="card-title">焦虑 x 2 号</div>
+    <div class="card-body">"如果我不被需要, 我就什么都不是" / "我必须先付出, 才配被爱"</div>
+  </div>
+  <div class="card card-dark">
+    <div class="card-title">焦虑 x 6 号</div>
+    <div class="card-body">"如果我不警觉, 就会被抛弃" / "我必须提前预演最坏的情况"</div>
+  </div>
+  <div class="card card-dark">
+    <div class="card-title">焦虑 x 4 号</div>
+    <div class="card-body">"如果我不够独特, 就会消失" / "只有被爱, 我才是真实的"</div>
+  </div>
+
+  <div class="card card-dark">
+    <div class="card-title">回避 x 5 号</div>
+    <div class="card-body">"如果我需要别人, 就会失去自己" / "我必须自给自足, 才安全"</div>
+  </div>
+  <div class="card card-dark">
+    <div class="card-title">回避 x 8 号</div>
+    <div class="card-body">"如果我软弱, 就会被伤害" / "我必须强大, 才能保护自己"</div>
+  </div>
+  <div class="card card-dark">
+    <div class="card-title">回避 x 3 号</div>
+    <div class="card-body">"如果我不优秀, 就没人看见我" / "成就 = 价值 = 被爱的入场券"</div>
+  </div>
+
+  <div class="card card-dark">
+    <div class="card-title">混乱 x 4 号</div>
+    <div class="card-body">"如果我靠近, 就会被抛弃" / "我想要但我怕; 我怕但我想要"</div>
+  </div>
+
+  <h2>看见你的"当下剧本"</h2>
+  <p>一个简单的练习, 帮你看见自己的重复:</p>
+
+  <div class="exercise">
+    <div class="exercise-label">练习 3.1 &middot; 最近一次"发作"</div>
+    <p>回想最近一次, 你在关系里"情绪很大"的时刻。</p>
+    <p>写下三个问题:</p>
+    <ol>
+      <li><strong>发生了什么?</strong> (具体事实, 简短)</li>
+      <li><strong>我当时做了什么/说了什么?</strong></li>
+      <li><strong>我当时的"内心独白"是什么?</strong></li>
+    </ol>
+    <p>用 5 分钟写下来, 不要修改, 让它自然流出。</p>
+  </div>
+
+  <p>写完之后, 退后一步看, 问自己:</p>
+  <ul>
+    <li>这是我第一次这样反应吗?</li>
+    <li>这种反应, 让我得到了什么? 又让我失去了什么?</li>
+    <li>如果 10 岁的我, 看见现在这个我, 会说什么?</li>
+  </ul>
+
+  <div class="quote">
+    "模式不是你的错。但模式是你的责任。&mdash; 你可以选择, 在下一次, 慢一点。"
+  </div>
+
+  <h2>分离"情绪"和"叙事"</h2>
+  <p>焦虑 / 混乱型尤其需要这个练习。当你很激动时, 试着在心里默默问:</p>
+  <div class="card">
+    <div class="card-title">三步分离法</div>
+    <div class="card-body">
+      <strong>1. 情绪声道:</strong> 我现在感到很难过 / 害怕 / 愤怒。<br>
+      <strong>2. 叙事声道:</strong> "他不爱你了" / "你要被抛弃了"。<br>
+      <strong>3. 事实声道:</strong> 他没回我消息, 这是事实。其他, 是我的系统在响警报。
+    </div>
+  </div>
+
+  <h2>看见"反移情"</h2>
+  <p>有些时候, 你对伴侣的强烈反应, 触发你的不是"他做了什么", 而是"他像了你生命中的某个人"。</p>
+  <p>试试问自己:</p>
+  <ul>
+    <li>这种"被抛弃" / "被控制" 的感觉, 第一次出现, 是在什么时候?</li>
+    <li>有谁, 曾经给过我这种感觉?</li>
+    <li>那个人, 现在还在吗? 我还需要那样怕他/她吗?</li>
+  </ul>
+
+  <div class="callout">
+    <div class="label">如果触动很深</div>
+    请记得, 这本书不能替代专业咨询。如果你发现自己在这些问题里哭了出来, 或者很久睡不着, 请联系一位合格的心理咨询师。
+  </div>
+</div>
+
+<!-- ==================== 第4章:日常练习 ==================== -->
+<div class="section">
+  <div class="section-num">CHAPTER 04</div>
+  <div class="section-title">每天 10 分钟 &mdash; 日常练习</div>
+  <div class="section-intro">
+    改变不需要一蹴而就, 每天 10 分钟, 坚持 3 个月, 你会发现自己不一样了。
+    这一章是具体的练习单, 选 1-2 个适合你的, 每天做。
+  </div>
+
+  <h2>练习一: 5-4-3-2-1 接地</h2>
+  <p>适用于: <strong>焦虑 / 混乱型, 在情绪激动时</strong></p>
+  <div class="exercise">
+    <div class="exercise-label">5 分钟 &middot; 当你感到"被情绪淹没" 时</div>
+    <p>环顾四周, 默默说出:</p>
+    <ul>
+      <li>你看到的 <strong>5 样</strong> 东西</li>
+      <li>你听到的 <strong>4 种</strong> 声音</li>
+      <li>你触碰的 <strong>3 样</strong> 东西 (哪怕是衣服的触感)</li>
+      <li>你闻到的 <strong>2 种</strong> 气味</li>
+      <li>你尝到的 <strong>1 种</strong> 味道</li>
+    </ul>
+    <p>这个练习不是逃避情绪, 而是让你的"思考脑" 重新上线。</p>
+  </div>
+
+  <h2>练习二: 红绿灯决策</h2>
+  <p>适用于: <strong>所有象限, 在"想立刻反应" 时</strong></p>
+  <div class="exercise">
+    <div class="exercise-label">3 分钟 &middot; 当你想发那条消息 / 想说那句话时</div>
+    <p><strong>红灯 (停):</strong> 觉察到"激活态", 停。</p>
+    <p><strong>黄灯 (慢):</strong> 问自己, "这真的是事实, 还是我的系统在响警报?"</p>
+    <p><strong>绿灯 (选):</strong> 带着觉察, 选择回应 (而不是反应)。</p>
+  </div>
+
+  <h2>练习三: 三栏日记</h2>
+  <p>适用于: <strong>所有象限, 每天睡前</strong></p>
+  <table>
+    <tr>
+      <th>情境 (发生了什么)</th>
+      <th>我的反应 (行为/情绪)</th>
+      <th>我现在能看见的模式</th>
+    </tr>
+    <tr>
+      <td>例: 他没回消息</td>
+      <td>例: 立刻发了三条长消息</td>
+      <td>例: 我的"被抛弃"警报响了; 2号在用力挽留</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+
+  <h2>练习四: 自我对话脚本</h2>
+  <p>适用于: <strong>所有象限, 在"自责" 时刻</strong></p>
+  <div class="card">
+    <div class="card-title">从"内在审判者" 到"内在朋友"</div>
+    <div class="card-body">
+      <strong>原来的声音:</strong> "你怎么又这样" / "你太作了" / "你就不能改吗"<br>
+      <strong>试着用这样的声音:</strong> "我看到你又在那个模式里了" / "你为什么这样, 我猜是因为……" / "你想保护的那个部分, 我看见了"
+    </div>
+  </div>
+
+  <h2>练习五: 给"小时候的我" 写一封信</h2>
+  <p>适用于: <strong>在阶段 3-4 哀悼与重建时, 谨慎使用</strong></p>
+  <div class="exercise">
+    <div class="exercise-label">10 分钟 &middot; 每月 1-2 次</div>
+    <p>在安静的房间里, 想象那个小时候的"你", 出现在面前。</p>
+    <p>他/她多大? 穿着什么? 看起来怎么样?</p>
+    <p>对那个"你", 写下一段话。可以是:</p>
+    <ul>
+      <li>你当时没能说出口的话</li>
+      <li>你想让那个你知道的"现在的真相"</li>
+      <li>你想给那个你的一个拥抱 / 一句承诺</li>
+    </ul>
+  </div>
+
+  <h2>练习六: 命名"预警信号"</h2>
+  <p>适用于: <strong>焦虑 / 混乱型</strong></p>
+  <p>为你的"系统警报" 找几个具体的预警信号。写下三个最常见的:</p>
+  <ol>
+    <li>身体信号: <span style="border-bottom: 1pt solid var(--secondary); display: inline-block; width: 60%;">&nbsp;</span></li>
+    <li>思维信号: <span style="border-bottom: 1pt solid var(--secondary); display: inline-block; width: 60%;">&nbsp;</span></li>
+    <li>行为信号: <span style="border-bottom: 1pt solid var(--secondary); display: inline-block; width: 60%;">&nbsp;</span></li>
+  </ol>
+
+  <h2>练习七: 回避型的"敢感受" 练习</h2>
+  <p>适用于: <strong>回避型</strong></p>
+  <div class="exercise">
+    <div class="exercise-label">5 分钟 &middot; 每天</div>
+    <p>找一个安全的时候 (自己一个人, 没人打扰)。</p>
+    <p>把手放在胸口。</p>
+    <p>问自己: "今天, 我有什么感受?"</p>
+    <p>如果第一反应是"没什么", 那是关闭感受的自动导航, 没关系, 让它在, 等 30 秒。</p>
+    <p>通常, 第二个反应会浮现。</p>
+  </div>
+
+  <h2>不要贪多</h2>
+  <div class="callout">
+    <div class="label">重要</div>
+    一次只选 1-2 个练习, 做满 21 天再换。改变, 来自"重复" 而不是"刺激"。
+  </div>
+</div>
+
+<!-- ==================== 第5章:关系中练习 ==================== -->
+<div class="section">
+  <div class="section-num">CHAPTER 05</div>
+  <div class="section-title">在关系中练习</div>
+  <div class="section-intro">
+    关系的修复, 不在你自己身上完成。
+    这一章, 是写给你和伴侣一起看的。
+  </div>
+
+  <h2>翻译彼此</h2>
+  <p>你和伴侣说不同的"爱的语言"。这不是谁对谁错, 只是翻译没做好:</p>
+  <table>
+    <tr><th>你说</th><th>你实际想说的是</th><th>对方可能听到的</th></tr>
+    <tr><td>"你为什么不回我消息?" (焦虑)</td><td>"我想知道你还在"</td><td>"你在控制我" (回避)</td></tr>
+    <tr><td>"我需要一点空间" (回避)</td><td>"我现在情绪有点满"</td><td>"你不爱我了" (焦虑)</td></tr>
+    <tr><td>"你怎么老是这样" (混乱)</td><td>"我害怕失去你"</td><td>"我在被攻击"</td></tr>
+    <tr><td>"随便吧, 你决定" (9号)</td><td>"我害怕冲突"</td><td>"你不在乎" (焦虑/4号)</td></tr>
+  </table>
+
+  <h2>沟通脚本</h2>
+
+  <h3>焦虑型的练习</h3>
+  <div class="card">
+    <div class="card-title">从"追" 到"表达"</div>
+    <div class="card-body">
+      <strong>旧版本:</strong> "你是不是不爱我了? 你为什么这样?"<br>
+      <strong>新版本:</strong> "我刚才有点不安, 想到你可能不在乎我, 让我有点难受。我能告诉你, 这对我意味着什么吗?"
+    </div>
+  </div>
+
+  <h3>回避型的练习</h3>
+  <div class="card">
+    <div class="card-title">从"躲" 到"靠近一点点"</div>
+    <div class="card-body">
+      <strong>旧版本:</strong> "我没事" / "我想一个人静静"<br>
+      <strong>新版本:</strong> "我现在有点累, 需要 30 分钟。30 分钟后, 我们能聊聊吗?"
+    </div>
+  </div>
+
+  <h3>混乱型的练习</h3>
+  <div class="card">
+    <div class="card-title">从"推" 到"暂停"</div>
+    <div class="card-body">
+      <strong>旧版本:</strong> "算了, 你根本不爱我" (转身就走)<br>
+      <strong>新版本:</strong> "我现在很混乱, 想躲起来, 但我不想这样。给我 10 分钟, 我会回来。"
+    </div>
+  </div>
+
+  <h2>每周一个"关系对话"</h2>
+  <p>建议每周找一个固定时间 (比如周末晚上), 双方做一次"关系对话"。规则如下:</p>
+  <ol>
+    <li>每人 10 分钟, 一方说话, 另一方不打断, 不反驳, 只复述 ("我听到你说……, 是这个意思吗?")</li>
+    <li>这一周里, 什么事让你感到被爱? 什么事让你感到受伤?</li>
+    <li>下一周, 你希望对方做的一件小事是什么? (具体到"今晚 8 点前回家吃饭")</li>
+    <li>每次结束, 至少说一句"谢谢你愿意告诉我"</li>
+  </ol>
+
+  <h2>预警信号 &middot; 双方都看</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">我的预警 (焦虑/混乱型)</div>
+      <div class="card-body">
+        &middot; 开始翻旧账<br>
+        &middot; 身体开始紧绷<br>
+        &middot; 想说"你每次都……"<br>
+        &middot; 想立刻得到一个答复
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">我的预警 (回避型)</div>
+      <div class="card-body">
+        &middot; 想沉默, 想走开<br>
+        &middot; 想说"我没事" 但其实有事<br>
+        &middot; 突然去做另一件事<br>
+        &middot; 觉得"反正说了也没用"
+      </div>
+    </div>
+  </div>
+
+  <h2>吵架后的修复</h2>
+  <p>所有的伴侣都会吵架。重要的不是吵不吵, 而是吵完怎么修复。</p>
+
+  <h3>修复四步</h3>
+  <ol>
+    <li><strong>降温:</strong> 至少 30 分钟, 让身体先平静下来。不要在情绪激动时继续对话。</li>
+    <li><strong>承认:</strong> 哪怕只是"我刚才反应过激了", 让对方知道你也知道刚才发生了什么。</li>
+    <li><strong>倾听:</strong> 不辩解, 听对方讲完。复述一次, 确认你听到了。</li>
+    <li><strong>约定:</strong> 共同约定一件"下次可以不同" 的小事。</li>
+  </ol>
+
+  <div class="quote">
+    "一段关系, 不是看有没有冲突, 而是看冲突之后, 你们愿不愿意再一起。"
+  </div>
+</div>
+
+<!-- ==================== 第6章:专业帮助 ==================== -->
+<div class="section">
+  <div class="section-num">CHAPTER 06</div>
+  <div class="section-title">何时需要专业帮助</div>
+  <div class="section-intro">
+    这本书能帮你看见和开始练习, 但有些时刻, 你需要另一个人, 陪你走得更深。
+  </div>
+
+  <h2>可以考虑寻求专业帮助的信号</h2>
+  <ul>
+    <li>反复陷入同一个模式, 自己努力了很久都没用</li>
+    <li>情绪困扰影响到了工作 / 学习 / 日常</li>
+    <li>有早期创伤 (被忽视, 被虐待, 重大丧失) 未被处理</li>
+    <li>伴侣关系严重破裂, 不知道怎么办</li>
+    <li>出现自我伤害的念头, 或严重的解离</li>
+    <li>这本书的练习, 反而触发了更强烈的情绪</li>
+  </ul>
+
+  <h2>如何选咨询师</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">看资质</div>
+      <div class="card-body">
+        &middot; 国家二级 / 三级心理咨询师<br>
+        &middot; 注册系统心理师 (中国心理学会)<br>
+        &middot; 受过系统培训的临床心理师
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">看匹配</div>
+      <div class="card-body">
+        &middot; 前 3-4 次, 感受你是否"被听见"<br>
+        &middot; 你的感受, 是被尊重的吗<br>
+        &middot; 你不需要表演, 不需要"表现好"
+      </div>
+    </div>
+  </div>
+
+  <h2>这本书不能替代咨询</h2>
+  <div class="callout">
+    <div class="label">诚实说明</div>
+    如果你正在经历严重的关系暴力, 性创伤, 或自我伤害的念头, 请立刻联系当地的精神卫生中心, 心理援助热线, 或可信赖的家人。
+  </div>
+
+  <h2>心理援助热线 (中国)</h2>
+  <table>
+    <tr><th>机构</th><th>号码</th><th>备注</th></tr>
+    <tr><td>北京心理危机研究与干预中心</td><td>010-82951332</td><td>24 小时</td></tr>
+    <tr><td>全国心理援助热线</td><td>400-161-9995</td><td>自杀干预</td></tr>
+    <tr><td>生命热线</td><td>400-821-1215</td><td>24 小时</td></tr>
+  </table>
+  <p style="font-size: 9pt; color: var(--secondary); margin-top: 0.5em;">注: 号码可能因机构调整而变化, 建议查询最新信息</p>
+</div>
+
+<!-- ==================== 附录 ==================== -->
+<div class="section">
+  <div class="section-num">APPENDIX</div>
+  <div class="section-title">附录 &middot; 工具与资源</div>
+
+  <h2>一图速记: 我的双轴位置</h2>
+  <p>把你的焦虑均值和回避均值, 标在下面的图上, 看看你在哪个象限:</p>
+
+  <table style="text-align: center;">
+    <tr>
+      <td style="background: #fff5ef; padding: 1.5em;">
+        <strong>混乱区</strong><br>
+        (高焦虑 + 高回避)<br>
+        推拉 / 矛盾
+      </td>
+      <td style="background: #f0f0f0; padding: 1.5em;">
+        <strong>回避区</strong><br>
+        (低焦虑 + 高回避)<br>
+        躲 / 去激活
+      </td>
+    </tr>
+    <tr>
+      <td style="background: #fef8e8; padding: 1.5em;">
+        <strong>焦虑区</strong><br>
+        (高焦虑 + 低回避)<br>
+        追 / 黏附
+      </td>
+      <td style="background: #f0f7f0; padding: 1.5em;">
+        <strong>安全区</strong><br>
+        (低焦虑 + 低回避)<br>
+        灵活连接
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: left; padding-top: 0.5em;">
+        在格子里, 标出你的九型主型 (例如: 焦虑区 - 2号)
+      </td>
+    </tr>
+  </table>
+
+  <h2>每周反思清单</h2>
+  <div class="exercise">
+    <div class="exercise-label">周日晚 15 分钟 &middot; 每周</div>
+    <p>这一周, 你的"自动导航" 启动了哪几次?</p>
+    <p>你"主动选择" 的时刻是哪一次?</p>
+    <p>你和伴侣的"翻译" 做得好吗? 哪一次做得好?</p>
+    <p>你对自己的哪一次"反应" 最不满意? 你想下次怎么不同?</p>
+    <p>你对自己的哪一次"反应" 最满意? 为什么?</p>
+  </div>
+
+  <h2>成长不是直线</h2>
+  <div class="quote">
+    成长不是每天进步一点点的直线。<br>
+    它更像螺旋 &mdash; 你会回到看似相同的地方, 但站的高度不一样了。<br>
+    不要因为"又回到原点" 而自责。<br>
+    只要你每次多看见一点, 你就已经在路上了。
+  </div>
+
+  <h2>推荐阅读</h2>
+  <ul>
+    <li>Bowlby《依恋三部曲》 &mdash; 依恋理论的奠基之作</li>
+    <li>Helen Fisher《我们为何结婚, 又为何不忠》 &middot; 关系的生物学</li>
+    <li>Riso & Hudson《九型人格的智慧》 &middot; 九型整合方向</li>
+    <li>Sue Johnson《依恋: 为什么我们爱得如此卑微》 &middot; EFT 情绪聚焦治疗</li>
+  </ul>
+
+  <h2>本书使用说明</h2>
+  <p>本手册是"依恋 × 九型" 融合理论架构的一部分(给来访者的简化版),完整的三轴(依恋×九型×客体关系)理论在咨询师版中。 配套材料见:</p>
+  <ul>
+    <li>《依恋 × 九型 × 客体关系: 情感咨询的融合理论架构与咨询实操》 (v2.2) &middot; 咨询师主文档</li>
+    <li>《咨询师速查工具卡 (v2.2)》 &middot; 现场查阅</li>
+    <li>《12 构型深度展开 (含 1.5/4.5/5.4 客体关系子节)》 &middot; 各构型独立文档</li>
+    <li>《6 个咨询录音脚本》 &middot; 培训示范</li>
+    <li>《客体关系专题包 (v2.0 新增)》 &middot; 5 个技术 + 12 构型图谱</li>
+  </ul>
+
+  <div style="text-align: center; margin-top: 3em; padding: 2em; background: var(--primary); color: var(--bg);">
+    <div style="font-size: 14pt; margin-bottom: 0.5em;">愿你看见自己</div>
+    <div style="font-size: 14pt; margin-bottom: 0.5em;">愿你接纳自己</div>
+    <div style="font-size: 14pt;">愿你成为自己</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# 临时文件
+*.tmp
+*.bak
+*.orig
+
+# LaTeX 中间产物
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+
+# Node 中间产物(如果以后用)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 用户配置
+.git-commit-msg.txt
+.git-remote-config.txt

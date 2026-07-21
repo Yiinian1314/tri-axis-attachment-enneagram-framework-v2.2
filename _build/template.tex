@@ -1,0 +1,75 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{xeCJK}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{calc}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+
+% 颜色定义
+\definecolor{primary}{HTML}{1A2238}
+\definecolor{accent}{HTML}{E2725B}
+\definecolor{secondary}{HTML}{4A5568}
+\definecolor{light}{HTML}{D4C5B9}
+\definecolor{bg}{HTML}{FAF6F1}
+
+% 字体 - 必须用 .otf 文件名而非 family name,
+% 否则 fontconfig 会选 .ttc 而非 .otf,导致 xelatex 嵌入的字体名变成 jp
+\setCJKmainfont{NotoSerifCJK-SC-Regular.otf}[
+  Path = /usr/share/fonts/opentype/noto/,
+  BoldFont = NotoSerifCJK-SC-Bold.otf
+]
+\setCJKsansfont{NotoSansCJK-SC-Regular.otf}[
+  Path = /usr/share/fonts/opentype/noto/
+]
+\setCJKfamilyfont{zhsong}{NotoSerifCJK-SC-Regular.otf}[
+  Path = /usr/share/fonts/opentype/noto/,
+  BoldFont = NotoSerifCJK-SC-Bold.otf
+]
+\setCJKfamilyfont{zhhei}{NotoSansCJK-SC-Regular.otf}[
+  Path = /usr/share/fonts/opentype/noto/
+]
+
+% Latin 字体
+\setmainfont{Latin Modern Roman}
+
+% 页眉 - 显式指定字体和字号
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\fontsize{10}{12}\selectfont\CJKfamily{zhhei} 依恋 × 九型 × 客体关系 情感咨询融合理论 (v2.2)}
+\fancyhead[R]{\fontsize{10}{12}\selectfont\CJKfamily{zhhei} $title$}
+\fancyfoot[C]{\fontsize{10}{12}\selectfont\CJKfamily{zhhei} \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% 标题格式
+\titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries\color{primary}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{accent}}{\thesubsubsection}{1em}{}
+
+% 链接颜色
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent}
+
+% task list 支持
+\providecommand{\tightlist}{}
+
+% 表格行高
+\renewcommand{\arraystretch}{1.3}
+
+% 引用块
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+
+\setcounter{secnumdepth}{0}
+\renewcommand{\numberline}[1]{}
+\begin{document}
+
+$body$
+
+\end{document}

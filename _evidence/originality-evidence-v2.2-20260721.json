@@ -1,0 +1,986 @@
+{
+  "metadata": {
+    "name": "依恋九型-情感咨询融合理论套件",
+    "version": "v2.2",
+    "evidence_generated_at": "2026-07-21T22:55:00+08:00",
+    "evidence_timezone": "Asia/Shanghai",
+    "total_files": 93,
+    "total_size_bytes": 23319723,
+    "root_hash": "6fd551309f68fdbfb4de9e2cf3d4f6d326c24ee500c935c98a7ec89bf83e8dbf",
+    "root_hash_algorithm": "SHA-256",
+    "evidence_chain_method": "email + git + (optional) blockchain"
+  },
+  "originality_declaration": {
+    "author": "[作者署名位置]",
+    "creation_complete_date": "2026-07-21",
+    "copyright_status": "自动取得(中国著作权法)",
+    "original_contributions": [
+      "三轴融合框架(依恋 × 九型防御位 × 客体关系)结构化整合",
+      "12 构型工作网格(4 依恋 × 3 防御位)命名与临床描述",
+      "5.6 节 客体关系视角",
+      "督导使用指南三件套体系"
+    ],
+    "academic_foundations": {
+      "attachment_x_object_relations": "Bowlby 学派 + West & Sheldon-Kell (1988)",
+      "attachment_x_enneagram": "Arthur (2008) 等方向性先例",
+      "enneagram_x_object_relations": "未见完全对应先例"
+    }
+  },
+  "file_groups": {
+    "top_level_md": [
+      {
+        "sha256": "e3188ad8f1a2fea2b907e618163a71138b99de3d9859bdaddfcaaebf4796ba73",
+        "size_bytes": 11726,
+        "mtime": "2026-07-20",
+        "path": "05:45:32  ./02-咨询师速查工具卡.md",
+        "filename": "02-咨询师速查工具卡.md"
+      },
+      {
+        "sha256": "c94949d84a88d814736b5ebdac4720e4a36ed7e933813c340f55041186c27c60",
+        "size_bytes": 33515,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./README.md",
+        "filename": "README.md"
+      },
+      {
+        "sha256": "264d750102af3fc28f334abc65deccd2e11125967709716013fc82b6a84cf68a",
+        "size_bytes": 67462,
+        "mtime": "2026-07-21",
+        "path": "14:37:27  ./01-理论架构与咨询指南.md",
+        "filename": "01-理论架构与咨询指南.md"
+      }
+    ],
+    "case_library": [
+      {
+        "sha256": "0d2fef679913772f70cb3b9cf28b2790582483938a3b84d8402f96a2580108b4",
+        "size_bytes": 12179,
+        "mtime": "2026-07-20",
+        "path": "05:45:33  ./09-案例库/案例分析框架与教学要点模板.md",
+        "filename": "案例分析框架与教学要点模板.md"
+      },
+      {
+        "sha256": "a17e768b999947671f9cd5b783fa56bf1fde08994b819bb769083cef40c6bb7d",
+        "size_bytes": 19000,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./09-案例库/案例05-伴侣咨询-焦虑2号与回避5号.md",
+        "filename": "案例05-伴侣咨询-焦虑2号与回避5号.md"
+      },
+      {
+        "sha256": "116049c2d46ecbcbe6a5474da712aa92c7b7189557571d07c490883d3634f6ad",
+        "size_bytes": 19863,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./09-案例库/案例04-伴侣咨询-焦虑6号与回避8号.md",
+        "filename": "案例04-伴侣咨询-焦虑6号与回避8号.md"
+      },
+      {
+        "sha256": "a740d21a8dce60b43f03a7e89a7a17cc1bd0e8f123fbaaea852cbe6df7d56dbf",
+        "size_bytes": 206979,
+        "mtime": "2026-07-21",
+        "path": "14:23:53  ./PDFs/09-案例库/案例分析框架与教学要点模板.pdf",
+        "filename": "案例分析框架与教学要点模板.pdf"
+      },
+      {
+        "sha256": "bb9b9200b69467351eda962e5d6adac29d4aae3724da2a9e1183b1fcde2fbc1b",
+        "size_bytes": 20763,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./09-案例库/案例02-回避5号-M先生.md",
+        "filename": "案例02-回避5号-M先生.md"
+      },
+      {
+        "sha256": "c23378da201278ee3bbf06d8611681521f7d7e85a094cc4dea7b54c6ac2e9be4",
+        "size_bytes": 22377,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./09-案例库/案例01-焦虑2号-L女士.md",
+        "filename": "案例01-焦虑2号-L女士.md"
+      },
+      {
+        "sha256": "faaebd330bc3fa282fcb50105355a6c7bcea87911135d888ce786af8c05fc31b",
+        "size_bytes": 244839,
+        "mtime": "2026-07-21",
+        "path": "14:23:22  ./PDFs/09-案例库/案例02-回避5号-M先生.pdf",
+        "filename": "案例02-回避5号-M先生.pdf"
+      },
+      {
+        "sha256": "bd42189726ca059c1463846a5080a0c1b111a654fbd472eaabf8785bac4d0e7c",
+        "size_bytes": 245729,
+        "mtime": "2026-07-21",
+        "path": "14:23:34  ./PDFs/09-案例库/案例04-伴侣咨询-焦虑6号与回避8号.pdf",
+        "filename": "案例04-伴侣咨询-焦虑6号与回避8号.pdf"
+      },
+      {
+        "sha256": "8aba8f47aa4cb0d18cac94fd2f93ccdf1b33ed24fd9d324793bfd401f72d0a23",
+        "size_bytes": 246682,
+        "mtime": "2026-07-21",
+        "path": "14:23:15  ./PDFs/09-案例库/案例01-焦虑2号-L女士.pdf",
+        "filename": "案例01-焦虑2号-L女士.pdf"
+      },
+      {
+        "sha256": "08f0c2cffef122939f4201e3ae22f28238bf1687b3385355a59ab28bb236fa67",
+        "size_bytes": 254145,
+        "mtime": "2026-07-21",
+        "path": "14:23:40  ./PDFs/09-案例库/案例05-伴侣咨询-焦虑2号与回避5号.pdf",
+        "filename": "案例05-伴侣咨询-焦虑2号与回避5号.pdf"
+      },
+      {
+        "sha256": "777cf7d8d81b8e306a918de40678396e5d696203540e4fc9e8affd9af08c54cb",
+        "size_bytes": 255158,
+        "mtime": "2026-07-21",
+        "path": "14:23:47  ./PDFs/09-案例库/案例06-求证型-陈女士.pdf",
+        "filename": "案例06-求证型-陈女士.pdf"
+      },
+      {
+        "sha256": "f5ce165b5efcefc4bea45cc81f5ef9cd2e38629c3d9d99406429195274e61590",
+        "size_bytes": 25791,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./09-案例库/案例03-混乱4号-C女士.md",
+        "filename": "案例03-混乱4号-C女士.md"
+      },
+      {
+        "sha256": "34e967e8eca686b5f1d9b879d8d79a4708136e61213740aa7f94abff49da0f46",
+        "size_bytes": 262955,
+        "mtime": "2026-07-21",
+        "path": "14:23:28  ./PDFs/09-案例库/案例03-混乱4号-C女士.pdf",
+        "filename": "案例03-混乱4号-C女士.pdf"
+      },
+      {
+        "sha256": "6e4a5b410b46fe753d72a38da698e15b7b4f77e73ec80a8b85904796ea51af68",
+        "size_bytes": 26405,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./09-案例库/案例06-求证型-陈女士.md",
+        "filename": "案例06-求证型-陈女士.md"
+      }
+    ],
+    "supervision_guide": [
+      {
+        "sha256": "0c98075ca8b8e73f373146b82ee138eff6017a2594960aecd2f64225c89dd20e",
+        "size_bytes": 13479,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./督导使用指南/督导使用指南-月度督导执行手册.md",
+        "filename": "督导使用指南-月度督导执行手册.md"
+      },
+      {
+        "sha256": "130a091dc237fee6c7b4e5d44808c5ce110dfccfd9db528e3712505fa4167a01",
+        "size_bytes": 14657,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./督导使用指南/督导使用指南-常见问题解答.md",
+        "filename": "督导使用指南-常见问题解答.md"
+      },
+      {
+        "sha256": "6eec6ec4c685294b889c7edfcbb7db252576f0f68addcc70f3a5fefd483cf424",
+        "size_bytes": 165485,
+        "mtime": "2026-07-21",
+        "path": "14:24:43  ./PDFs/督导使用指南/督导使用指南-月度督导执行手册.pdf",
+        "filename": "督导使用指南-月度督导执行手册.pdf"
+      },
+      {
+        "sha256": "49f5bb23b3bf00454e10ce6f10f6fb423b9ae39399eeb2f90e70cbd6459cf480",
+        "size_bytes": 16746,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./督导使用指南/督导使用指南-主文档.md",
+        "filename": "督导使用指南-主文档.md"
+      },
+      {
+        "sha256": "c8485d096a0c7743ebcaab27c74f190540f216be363e90208efc8fb3e4a34947",
+        "size_bytes": 194367,
+        "mtime": "2026-07-21",
+        "path": "14:24:31  ./PDFs/督导使用指南/督导使用指南-主文档.pdf",
+        "filename": "督导使用指南-主文档.pdf"
+      },
+      {
+        "sha256": "57e654f1aecef6984f2422f83b67ad476adc0c8a037d19e23ed1631f8ef49b3e",
+        "size_bytes": 214596,
+        "mtime": "2026-07-21",
+        "path": "14:24:37  ./PDFs/督导使用指南/督导使用指南-常见问题解答.pdf",
+        "filename": "督导使用指南-常见问题解答.pdf"
+      }
+    ],
+    "configurations": [
+      {
+        "sha256": "f741ce370086c00d7ba504f4aff98cbbc8daac2b023560ac6a1bc5b5d51d44c4",
+        "size_bytes": 15340,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型01-焦虑×2号助人型.md",
+        "filename": "构型01-焦虑×2号助人型.md"
+      },
+      {
+        "sha256": "6240b87cdd71952aac8e4bbe4fcd51c90998546551e5cf74adc42e926b03f1a6",
+        "size_bytes": 18429,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型02-焦虑×6号疑惑型.md",
+        "filename": "构型02-焦虑×6号疑惑型.md"
+      },
+      {
+        "sha256": "a0d581186872ee19fbc580d3a0b5798e96c6d130e01cb16e8c44c45acbfd7512",
+        "size_bytes": 19151,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型11-安全×9号和平型.md",
+        "filename": "构型11-安全×9号和平型.md"
+      },
+      {
+        "sha256": "49a42cd86f3b0f4e940357db0a37cd54ed24547fc7764dc5999ae08e7e37781f",
+        "size_bytes": 19267,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型10-安全×7号享乐型.md",
+        "filename": "构型10-安全×7号享乐型.md"
+      },
+      {
+        "sha256": "f6750e66bef3de367c937ba34a0e7ee0ab33998b229dd1237f311df727ec3eb3",
+        "size_bytes": 20154,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型09-混乱×9号和平型.md",
+        "filename": "构型09-混乱×9号和平型.md"
+      },
+      {
+        "sha256": "5cc11da610440d4edcf0faf827ddb39f1b23bb129df1251f481ee008714140b5",
+        "size_bytes": 205789,
+        "mtime": "2026-07-21",
+        "path": "14:21:35  ./PDFs/05-构型深度展开/构型11-安全×9号和平型.pdf",
+        "filename": "构型11-安全×9号和平型.pdf"
+      },
+      {
+        "sha256": "1f25571a51a49f01a6981929b8cf679dd21296747126ff6762e98903ac5ae8d9",
+        "size_bytes": 21930,
+        "mtime": "2026-07-20",
+        "path": "05:45:32  ./05-构型深度展开/构型12-安全×3号成就型.md",
+        "filename": "构型12-安全×3号成就型.md"
+      },
+      {
+        "sha256": "e19b5494eb3e62c12f266be617e30416fbdc55eead9348e89fcfd1cc6f0f4f0b",
+        "size_bytes": 221247,
+        "mtime": "2026-07-21",
+        "path": "14:21:22  ./PDFs/05-构型深度展开/构型09-混乱×9号和平型.pdf",
+        "filename": "构型09-混乱×9号和平型.pdf"
+      },
+      {
+        "sha256": "13cd034c0b3a880a26a981bbd6ec61b4a2286920e6540ce576df73f0f0225171",
+        "size_bytes": 224491,
+        "mtime": "2026-07-21",
+        "path": "14:21:29  ./PDFs/05-构型深度展开/构型10-安全×7号享乐型.pdf",
+        "filename": "构型10-安全×7号享乐型.pdf"
+      },
+      {
+        "sha256": "ee465d992ce35517dcedc6a4aeaac66805e0f73b434c04b6063984e47d48649f",
+        "size_bytes": 227568,
+        "mtime": "2026-07-21",
+        "path": "14:21:41  ./PDFs/05-构型深度展开/构型12-安全×3号成就型.pdf",
+        "filename": "构型12-安全×3号成就型.pdf"
+      },
+      {
+        "sha256": "7f3ca16d5c4d9ddb4a7f3ffd0aa01fa7b084512a6bb266660ac4d791291fc472",
+        "size_bytes": 250977,
+        "mtime": "2026-07-21",
+        "path": "14:20:38  ./PDFs/05-构型深度展开/构型02-焦虑×6号疑惑型.pdf",
+        "filename": "构型02-焦虑×6号疑惑型.pdf"
+      },
+      {
+        "sha256": "5c11018aaf510d27ecf8389c95c1c1e317bba6fad57c524998ddf6caa27bcc6e",
+        "size_bytes": 25259,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型03-焦虑×4号浪漫型.md",
+        "filename": "构型03-焦虑×4号浪漫型.md"
+      },
+      {
+        "sha256": "152c686b7b3c6c6f98239002c2936d860d56554f7cb15bf3d1d49f20b4f21c31",
+        "size_bytes": 257321,
+        "mtime": "2026-07-21",
+        "path": "14:20:32  ./PDFs/05-构型深度展开/构型01-焦虑×2号助人型.pdf",
+        "filename": "构型01-焦虑×2号助人型.pdf"
+      },
+      {
+        "sha256": "54a4b2a07edacee1e2be30114eb9cb76babdab380ef2d9e15cd5fd6d3d731fff",
+        "size_bytes": 259211,
+        "mtime": "2026-07-21",
+        "path": "14:21:16  ./PDFs/05-构型深度展开/构型08-混乱×1号完美型.pdf",
+        "filename": "构型08-混乱×1号完美型.pdf"
+      },
+      {
+        "sha256": "40e4f078c6914a9eb3db33c8ebab96f88995a39e19cbde0975d3821b9df485f4",
+        "size_bytes": 26285,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型04-回避×5号观察型.md",
+        "filename": "构型04-回避×5号观察型.md"
+      },
+      {
+        "sha256": "9d89f3b5adf87bcf4b175e1eca5fad5b81d7576486f26877ecd0c43737701aa2",
+        "size_bytes": 26393,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型05-回避×8号挑战型.md",
+        "filename": "构型05-回避×8号挑战型.md"
+      },
+      {
+        "sha256": "6c70111e3e13e099169ec621803365b79543bf308add02873d17d55782ac2088",
+        "size_bytes": 272914,
+        "mtime": "2026-07-21",
+        "path": "14:21:03  ./PDFs/05-构型深度展开/构型06-回避×3号成就型.pdf",
+        "filename": "构型06-回避×3号成就型.pdf"
+      },
+      {
+        "sha256": "7deb0cb48e6d0fc6e45c0a8d4e0e61b26dfd4d1561f76e5d732ab14e0c2ed54c",
+        "size_bytes": 27336,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型08-混乱×1号完美型.md",
+        "filename": "构型08-混乱×1号完美型.md"
+      },
+      {
+        "sha256": "e535790a863575e0f9e541aa11248e67bcfa50d6500157cade45a17b2226945f",
+        "size_bytes": 27408,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型06-回避×3号成就型.md",
+        "filename": "构型06-回避×3号成就型.md"
+      },
+      {
+        "sha256": "12c00e531e31b234dee7df4e06cd910c8c4b62190d7303ea55fc9dca457d5a16",
+        "size_bytes": 274335,
+        "mtime": "2026-07-21",
+        "path": "14:20:57  ./PDFs/05-构型深度展开/构型05-回避×8号挑战型.pdf",
+        "filename": "构型05-回避×8号挑战型.pdf"
+      },
+      {
+        "sha256": "3e0a3bcf2f25f8f39650f04bd729b68635ed389958144715e30dff4050351ea2",
+        "size_bytes": 275482,
+        "mtime": "2026-07-21",
+        "path": "14:20:51  ./PDFs/05-构型深度展开/构型04-回避×5号观察型.pdf",
+        "filename": "构型04-回避×5号观察型.pdf"
+      },
+      {
+        "sha256": "c1e5bb05ddfe3cc42cb8648643e5d60d895100d8eb0717f0c22442383cdf33cd",
+        "size_bytes": 277402,
+        "mtime": "2026-07-21",
+        "path": "14:20:44  ./PDFs/05-构型深度展开/构型03-焦虑×4号浪漫型.pdf",
+        "filename": "构型03-焦虑×4号浪漫型.pdf"
+      },
+      {
+        "sha256": "2abda66358099210e0b13730fec50511865999ebfc2236f6fe4fb4d2b18844f5",
+        "size_bytes": 28072,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./05-构型深度展开/构型07-混乱×4号浪漫型.md",
+        "filename": "构型07-混乱×4号浪漫型.md"
+      },
+      {
+        "sha256": "320a2a54b1d012b9ba91004a34d9f56e6568ed937cdee16d94bb1c659daeddb5",
+        "size_bytes": 281604,
+        "mtime": "2026-07-21",
+        "path": "14:21:10  ./PDFs/05-构型深度展开/构型07-混乱×4号浪漫型.pdf",
+        "filename": "构型07-混乱×4号浪漫型.pdf"
+      }
+    ],
+    "scripts": [
+      {
+        "sha256": "bdc4345ff9f2a78c58dba97ed82efe24c8c4ad0f61e5ac74b1081ca473056650",
+        "size_bytes": 13664,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./06-咨询录音脚本/脚本01-焦虑2号-个人咨询-第5次.md",
+        "filename": "脚本01-焦虑2号-个人咨询-第5次.md"
+      },
+      {
+        "sha256": "122cb1236079f3c0f789f56de757714e86d25b2b100fc4fd6cdd29c7365ef2f8",
+        "size_bytes": 16025,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./06-咨询录音脚本/脚本02-回避5号-个人咨询-第8次.md",
+        "filename": "脚本02-回避5号-个人咨询-第8次.md"
+      },
+      {
+        "sha256": "5a2950d82c8d18dbc765d1ceb10653700f642db7fec120e77b0178faac0c922e",
+        "size_bytes": 166939,
+        "mtime": "2026-07-21",
+        "path": "14:21:53  ./PDFs/06-咨询录音脚本/脚本02-回避5号-个人咨询-第8次.pdf",
+        "filename": "脚本02-回避5号-个人咨询-第8次.pdf"
+      },
+      {
+        "sha256": "554aaa735bd945f5f61bdc4075f1c6a218dd5b252fc47dd33866409d7675ad2c",
+        "size_bytes": 16914,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./06-咨询录音脚本/脚本05-伴侣咨询-翻译与整合.md",
+        "filename": "脚本05-伴侣咨询-翻译与整合.md"
+      },
+      {
+        "sha256": "e44009dec1e5d2660e78fb850e90c4918282fb87204aa300bba0f12532c26dfb",
+        "size_bytes": 170584,
+        "mtime": "2026-07-21",
+        "path": "14:22:12  ./PDFs/06-咨询录音脚本/脚本05-伴侣咨询-翻译与整合.pdf",
+        "filename": "脚本05-伴侣咨询-翻译与整合.pdf"
+      },
+      {
+        "sha256": "6fc5bd5e39c090c7bbaf2109bdf46e8f53ff1e8e0f95c68cc58b538d163480c2",
+        "size_bytes": 172082,
+        "mtime": "2026-07-21",
+        "path": "14:21:47  ./PDFs/06-咨询录音脚本/脚本01-焦虑2号-个人咨询-第5次.pdf",
+        "filename": "脚本01-焦虑2号-个人咨询-第5次.pdf"
+      },
+      {
+        "sha256": "d1285cfadb1aedaa850cdc9b7cecc4937c73e6e1b2cb3fa292f71ca9c04f0114",
+        "size_bytes": 17376,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./06-咨询录音脚本/脚本04-伴侣咨询-追躲循环.md",
+        "filename": "脚本04-伴侣咨询-追躲循环.md"
+      },
+      {
+        "sha256": "a4bcd3f81ed95d702d4b192b69933c7e75eba8d431e8f69c3a36bc4233ac1e8e",
+        "size_bytes": 174421,
+        "mtime": "2026-07-21",
+        "path": "14:22:06  ./PDFs/06-咨询录音脚本/脚本04-伴侣咨询-追躲循环.pdf",
+        "filename": "脚本04-伴侣咨询-追躲循环.pdf"
+      },
+      {
+        "sha256": "364243ba31d22cf506a9337165a9565a84775730cf958797926850520ad2edb5",
+        "size_bytes": 212043,
+        "mtime": "2026-07-21",
+        "path": "14:22:18  ./PDFs/06-咨询录音脚本/脚本06-伴侣咨询-深度整合.pdf",
+        "filename": "脚本06-伴侣咨询-深度整合.pdf"
+      },
+      {
+        "sha256": "80a0c2fa64c7dce0f75c5e6af72d44abb4a353e194c8cca0bdb476f05a73d3f0",
+        "size_bytes": 225789,
+        "mtime": "2026-07-21",
+        "path": "14:22:00  ./PDFs/06-咨询录音脚本/脚本03-混乱4号-个人咨询-第12次.pdf",
+        "filename": "脚本03-混乱4号-个人咨询-第12次.pdf"
+      },
+      {
+        "sha256": "30645b096132640d96b9276cf40897c16ed3fa7ae5c6d4a319b2ad1f49308c61",
+        "size_bytes": 29115,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./06-咨询录音脚本/脚本03-混乱4号-个人咨询-第12次.md",
+        "filename": "脚本03-混乱4号-个人咨询-第12次.md"
+      },
+      {
+        "sha256": "586f7e30781f79d509c2de6563721f3c20bbb66650d4d836498b9099cf7c8379",
+        "size_bytes": 32373,
+        "mtime": "2026-07-20",
+        "path": "05:45:32  ./06-咨询录音脚本/脚本06-伴侣咨询-深度整合.md",
+        "filename": "脚本06-伴侣咨询-深度整合.md"
+      }
+    ],
+    "ppt": [],
+    "other_md": [
+      {
+        "sha256": "d74a61bb15eba571decee0a2a40ea02c076e0e87be49e6181cad0c482310cbc2",
+        "size_bytes": 13871,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./10-客体关系专题包/客体关系专题包-投射性识别指南.md",
+        "filename": "客体关系专题包-投射性识别指南.md"
+      },
+      {
+        "sha256": "e883d750959ddce8fe3c822556afbc7836a25c80eee6f16d3a653891344564f8",
+        "size_bytes": 16757,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./10-客体关系专题包/客体关系专题包-主文档.md",
+        "filename": "客体关系专题包-主文档.md"
+      },
+      {
+        "sha256": "a9f09d9d6dc9d0cfca77f3efe074733544aeeb814d47a49f6550685b0f08e1a9",
+        "size_bytes": 17001,
+        "mtime": "2026-07-20",
+        "path": "05:45:32  ./08-督导专题包/督导专题包-危机处理与转介指南.md",
+        "filename": "督导专题包-危机处理与转介指南.md"
+      },
+      {
+        "sha256": "773471bc594c9db9d0759b5098492e09a0b4121813e6fa36577ceb85260c17c0",
+        "size_bytes": 172479,
+        "mtime": "2026-07-21",
+        "path": "14:22:50  ./PDFs/08-督导专题包/督导专题包-12个构型的督导要点.pdf",
+        "filename": "督导专题包-12个构型的督导要点.pdf"
+      },
+      {
+        "sha256": "9afde015a19bd80712a1eb8558715606fbad27770ed8099cbc054b2609584c63",
+        "size_bytes": 17368,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./07-咨询师自我校准/咨询师自我校准-耗竭识别与恢复.md",
+        "filename": "咨询师自我校准-耗竭识别与恢复.md"
+      },
+      {
+        "sha256": "fd0eae4da888d17ee375410ba9feef404bce3cb5304be03341c287c3c8f7c435",
+        "size_bytes": 18443,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./07-咨询师自我校准/咨询师自我校准-自评工具.md",
+        "filename": "咨询师自我校准-自评工具.md"
+      },
+      {
+        "sha256": "665461dcd536a3d386c704a5a21317256526c5721abe200b8d78708fb0b91497",
+        "size_bytes": 19709,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./10-客体关系专题包/客体关系专题包-温尼科特时刻与破裂修复.md",
+        "filename": "客体关系专题包-温尼科特时刻与破裂修复.md"
+      },
+      {
+        "sha256": "144155b9aec73aaaa98cc6aa9d0ca8dffa05845f62282313e9613bc7afb00271",
+        "size_bytes": 19945,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./08-督导专题包/督导专题包-督导流程与记录模板.md",
+        "filename": "督导专题包-督导流程与记录模板.md"
+      },
+      {
+        "sha256": "a435e9415cbfd9c2124e9c1dd7e61079c4f44be3db6d25e24211e1cca27b9105",
+        "size_bytes": 20577,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./10-客体关系专题包/客体关系专题包-咨询师5技术日常自评卡.md",
+        "filename": "客体关系专题包-咨询师5技术日常自评卡.md"
+      },
+      {
+        "sha256": "035044454d224c760023b5e7b4df71d38bd66dd35a3d2ac42aee51508aeacb14",
+        "size_bytes": 209134,
+        "mtime": "2026-07-21",
+        "path": "14:24:18  ./PDFs/10-客体关系专题包/客体关系专题包-投射性识别指南.pdf",
+        "filename": "客体关系专题包-投射性识别指南.pdf"
+      },
+      {
+        "sha256": "777269039fc47424250950e231a1ba15bdfbacaa55f821beec30c5359ecb227a",
+        "size_bytes": 214479,
+        "mtime": "2026-07-21",
+        "path": "14:24:24  ./PDFs/10-客体关系专题包/客体关系专题包-温尼科特时刻与破裂修复.pdf",
+        "filename": "客体关系专题包-温尼科特时刻与破裂修复.pdf"
+      },
+      {
+        "sha256": "7c0ac58833fcee85a8b808b603df18a78b28d20c50e4d9ae90b9bec5b5374449",
+        "size_bytes": 215480,
+        "mtime": "2026-07-21",
+        "path": "14:22:44  ./PDFs/07-咨询师自我校准/咨询师自我校准-自评工具.pdf",
+        "filename": "咨询师自我校准-自评工具.pdf"
+      },
+      {
+        "sha256": "94e846eb0f3298477a5a6ba489fa6bbe3fd544a69aa3ce700028848e94e26017",
+        "size_bytes": 219095,
+        "mtime": "2026-07-21",
+        "path": "14:24:12  ./PDFs/10-客体关系专题包/客体关系专题包-咨询师5技术日常自评卡.pdf",
+        "filename": "客体关系专题包-咨询师5技术日常自评卡.pdf"
+      },
+      {
+        "sha256": "8ff99fa597a07fc73a456f9664a12b36bff42361361ec91b3829118631fc343f",
+        "size_bytes": 227704,
+        "mtime": "2026-07-21",
+        "path": "14:23:03  ./PDFs/08-督导专题包/督导专题包-危机处理与转介指南.pdf",
+        "filename": "督导专题包-危机处理与转介指南.pdf"
+      },
+      {
+        "sha256": "18f596f9965c427af96419a137eebacf5d660136239a2a111b4ca7162bfbec46",
+        "size_bytes": 22928,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./07-咨询师自我校准/咨询师自我校准-主文档.md",
+        "filename": "咨询师自我校准-主文档.md"
+      },
+      {
+        "sha256": "eb7abc0cfb880af0f7ada1a1a628e2736590b9dd44fe0790a1e6f8f7b9a12792",
+        "size_bytes": 230074,
+        "mtime": "2026-07-21",
+        "path": "14:24:06  ./PDFs/10-客体关系专题包/客体关系专题包-主文档.pdf",
+        "filename": "客体关系专题包-主文档.pdf"
+      },
+      {
+        "sha256": "83a0871a0fb6af71ac19dc091a9365bf792e645f71153e75a23bab32eac474e4",
+        "size_bytes": 23224,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./08-督导专题包/督导专题包-主文档.md",
+        "filename": "督导专题包-主文档.md"
+      },
+      {
+        "sha256": "c1744d97e8e4470f0c7293a41c47f6c3e374dc486b95dfa6f1df9aec3ce62fdf",
+        "size_bytes": 232299,
+        "mtime": "2026-07-21",
+        "path": "14:23:59  ./PDFs/10-客体关系专题包/客体关系专题包-12构型内在图谱.pdf",
+        "filename": "客体关系专题包-12构型内在图谱.pdf"
+      },
+      {
+        "sha256": "8a38170e60c795b2411d0ed94b7683836494dfdcda826baa1b32245c22db3ccd",
+        "size_bytes": 242374,
+        "mtime": "2026-07-21",
+        "path": "14:23:09  ./PDFs/08-督导专题包/督导专题包-督导流程与记录模板.pdf",
+        "filename": "督导专题包-督导流程与记录模板.pdf"
+      },
+      {
+        "sha256": "ee643e224cdee66343dcefc17e0c4cadf13361e0346263e7100868b8f2f8db5d",
+        "size_bytes": 242475,
+        "mtime": "2026-07-21",
+        "path": "14:22:31  ./PDFs/07-咨询师自我校准/咨询师自我校准-反移情手册.pdf",
+        "filename": "咨询师自我校准-反移情手册.pdf"
+      },
+      {
+        "sha256": "9c6a4bbddd7bbe06f8001a3a1ba2e5ce3d0065bdb58c898ff0568562aca9b0ee",
+        "size_bytes": 246016,
+        "mtime": "2026-07-21",
+        "path": "14:22:38  ./PDFs/07-咨询师自我校准/咨询师自我校准-耗竭识别与恢复.pdf",
+        "filename": "咨询师自我校准-耗竭识别与恢复.pdf"
+      },
+      {
+        "sha256": "58ed09942539e33425e90ff5f730c0ebc2c7627a5fc3c1a159f1f0c75da021f0",
+        "size_bytes": 24694,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./08-督导专题包/督导专题包-12个构型的督导要点.md",
+        "filename": "督导专题包-12个构型的督导要点.md"
+      },
+      {
+        "sha256": "46c8b2838ff652976d27cf52c8a41b8dea774e985ed8ad8e2fd098d000bf45f3",
+        "size_bytes": 252171,
+        "mtime": "2026-07-21",
+        "path": "14:22:57  ./PDFs/08-督导专题包/督导专题包-主文档.pdf",
+        "filename": "督导专题包-主文档.pdf"
+      },
+      {
+        "sha256": "954853920aabe3cf39db8d29bc89e7191f1c351698dd9ed3e4b5e5c8c62d0d62",
+        "size_bytes": 253974,
+        "mtime": "2026-07-21",
+        "path": "14:22:25  ./PDFs/07-咨询师自我校准/咨询师自我校准-主文档.pdf",
+        "filename": "咨询师自我校准-主文档.pdf"
+      },
+      {
+        "sha256": "a3b7c76f4d28d07a6ee7fab0132525cae0cec0e00ce3cd5a47d8dbb4eb74138e",
+        "size_bytes": 273670,
+        "mtime": "2026-07-21",
+        "path": "14:24:49  ./04-来访者自助手册/来访者自助手册.pdf",
+        "filename": "来访者自助手册.pdf"
+      },
+      {
+        "sha256": "a66437649ca5668f0d12de62c7f277dad6b9cfc8e81ef518291562b127e4c30a",
+        "size_bytes": 28161,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./10-客体关系专题包/客体关系专题包-12构型内在图谱.md",
+        "filename": "客体关系专题包-12构型内在图谱.md"
+      },
+      {
+        "sha256": "1597320d684b34b6d6ccc9765643f892e0c2ff48820df071d7646eb36eebeca1",
+        "size_bytes": 31039,
+        "mtime": "2026-07-21",
+        "path": "14:19:33  ./07-咨询师自我校准/咨询师自我校准-反移情手册.md",
+        "filename": "咨询师自我校准-反移情手册.md"
+      },
+      {
+        "sha256": "e130779ff804322166dddc1fb959385da64e8cdaf1c61dc717121ff2351da19b",
+        "size_bytes": 6784,
+        "mtime": "2026-07-21",
+        "path": "14:37:58  ./_build/README.md",
+        "filename": "README.md"
+      }
+    ],
+    "pdfs": [
+      {
+        "sha256": "6eec6ec4c685294b889c7edfcbb7db252576f0f68addcc70f3a5fefd483cf424",
+        "size_bytes": 165485,
+        "mtime": "2026-07-21",
+        "path": "14:24:43  ./PDFs/督导使用指南/督导使用指南-月度督导执行手册.pdf",
+        "filename": "督导使用指南-月度督导执行手册.pdf"
+      },
+      {
+        "sha256": "5a2950d82c8d18dbc765d1ceb10653700f642db7fec120e77b0178faac0c922e",
+        "size_bytes": 166939,
+        "mtime": "2026-07-21",
+        "path": "14:21:53  ./PDFs/06-咨询录音脚本/脚本02-回避5号-个人咨询-第8次.pdf",
+        "filename": "脚本02-回避5号-个人咨询-第8次.pdf"
+      },
+      {
+        "sha256": "e44009dec1e5d2660e78fb850e90c4918282fb87204aa300bba0f12532c26dfb",
+        "size_bytes": 170584,
+        "mtime": "2026-07-21",
+        "path": "14:22:12  ./PDFs/06-咨询录音脚本/脚本05-伴侣咨询-翻译与整合.pdf",
+        "filename": "脚本05-伴侣咨询-翻译与整合.pdf"
+      },
+      {
+        "sha256": "6fc5bd5e39c090c7bbaf2109bdf46e8f53ff1e8e0f95c68cc58b538d163480c2",
+        "size_bytes": 172082,
+        "mtime": "2026-07-21",
+        "path": "14:21:47  ./PDFs/06-咨询录音脚本/脚本01-焦虑2号-个人咨询-第5次.pdf",
+        "filename": "脚本01-焦虑2号-个人咨询-第5次.pdf"
+      },
+      {
+        "sha256": "773471bc594c9db9d0759b5098492e09a0b4121813e6fa36577ceb85260c17c0",
+        "size_bytes": 172479,
+        "mtime": "2026-07-21",
+        "path": "14:22:50  ./PDFs/08-督导专题包/督导专题包-12个构型的督导要点.pdf",
+        "filename": "督导专题包-12个构型的督导要点.pdf"
+      },
+      {
+        "sha256": "a4bcd3f81ed95d702d4b192b69933c7e75eba8d431e8f69c3a36bc4233ac1e8e",
+        "size_bytes": 174421,
+        "mtime": "2026-07-21",
+        "path": "14:22:06  ./PDFs/06-咨询录音脚本/脚本04-伴侣咨询-追躲循环.pdf",
+        "filename": "脚本04-伴侣咨询-追躲循环.pdf"
+      },
+      {
+        "sha256": "c8485d096a0c7743ebcaab27c74f190540f216be363e90208efc8fb3e4a34947",
+        "size_bytes": 194367,
+        "mtime": "2026-07-21",
+        "path": "14:24:31  ./PDFs/督导使用指南/督导使用指南-主文档.pdf",
+        "filename": "督导使用指南-主文档.pdf"
+      },
+      {
+        "sha256": "5cc11da610440d4edcf0faf827ddb39f1b23bb129df1251f481ee008714140b5",
+        "size_bytes": 205789,
+        "mtime": "2026-07-21",
+        "path": "14:21:35  ./PDFs/05-构型深度展开/构型11-安全×9号和平型.pdf",
+        "filename": "构型11-安全×9号和平型.pdf"
+      },
+      {
+        "sha256": "a740d21a8dce60b43f03a7e89a7a17cc1bd0e8f123fbaaea852cbe6df7d56dbf",
+        "size_bytes": 206979,
+        "mtime": "2026-07-21",
+        "path": "14:23:53  ./PDFs/09-案例库/案例分析框架与教学要点模板.pdf",
+        "filename": "案例分析框架与教学要点模板.pdf"
+      },
+      {
+        "sha256": "035044454d224c760023b5e7b4df71d38bd66dd35a3d2ac42aee51508aeacb14",
+        "size_bytes": 209134,
+        "mtime": "2026-07-21",
+        "path": "14:24:18  ./PDFs/10-客体关系专题包/客体关系专题包-投射性识别指南.pdf",
+        "filename": "客体关系专题包-投射性识别指南.pdf"
+      },
+      {
+        "sha256": "364243ba31d22cf506a9337165a9565a84775730cf958797926850520ad2edb5",
+        "size_bytes": 212043,
+        "mtime": "2026-07-21",
+        "path": "14:22:18  ./PDFs/06-咨询录音脚本/脚本06-伴侣咨询-深度整合.pdf",
+        "filename": "脚本06-伴侣咨询-深度整合.pdf"
+      },
+      {
+        "sha256": "777269039fc47424250950e231a1ba15bdfbacaa55f821beec30c5359ecb227a",
+        "size_bytes": 214479,
+        "mtime": "2026-07-21",
+        "path": "14:24:24  ./PDFs/10-客体关系专题包/客体关系专题包-温尼科特时刻与破裂修复.pdf",
+        "filename": "客体关系专题包-温尼科特时刻与破裂修复.pdf"
+      },
+      {
+        "sha256": "57e654f1aecef6984f2422f83b67ad476adc0c8a037d19e23ed1631f8ef49b3e",
+        "size_bytes": 214596,
+        "mtime": "2026-07-21",
+        "path": "14:24:37  ./PDFs/督导使用指南/督导使用指南-常见问题解答.pdf",
+        "filename": "督导使用指南-常见问题解答.pdf"
+      },
+      {
+        "sha256": "7c0ac58833fcee85a8b808b603df18a78b28d20c50e4d9ae90b9bec5b5374449",
+        "size_bytes": 215480,
+        "mtime": "2026-07-21",
+        "path": "14:22:44  ./PDFs/07-咨询师自我校准/咨询师自我校准-自评工具.pdf",
+        "filename": "咨询师自我校准-自评工具.pdf"
+      },
+      {
+        "sha256": "94e846eb0f3298477a5a6ba489fa6bbe3fd544a69aa3ce700028848e94e26017",
+        "size_bytes": 219095,
+        "mtime": "2026-07-21",
+        "path": "14:24:12  ./PDFs/10-客体关系专题包/客体关系专题包-咨询师5技术日常自评卡.pdf",
+        "filename": "客体关系专题包-咨询师5技术日常自评卡.pdf"
+      },
+      {
+        "sha256": "e19b5494eb3e62c12f266be617e30416fbdc55eead9348e89fcfd1cc6f0f4f0b",
+        "size_bytes": 221247,
+        "mtime": "2026-07-21",
+        "path": "14:21:22  ./PDFs/05-构型深度展开/构型09-混乱×9号和平型.pdf",
+        "filename": "构型09-混乱×9号和平型.pdf"
+      },
+      {
+        "sha256": "f9aebbefff26efa9b82c0422c9cbf2c55ac7a0b37fa1eeed90a9441d56478de6",
+        "size_bytes": 221599,
+        "mtime": "2026-07-21",
+        "path": "14:20:19  ./PDFs/02-咨询师速查工具卡.pdf",
+        "filename": "02-咨询师速查工具卡.pdf"
+      },
+      {
+        "sha256": "13cd034c0b3a880a26a981bbd6ec61b4a2286920e6540ce576df73f0f0225171",
+        "size_bytes": 224491,
+        "mtime": "2026-07-21",
+        "path": "14:21:29  ./PDFs/05-构型深度展开/构型10-安全×7号享乐型.pdf",
+        "filename": "构型10-安全×7号享乐型.pdf"
+      },
+      {
+        "sha256": "80a0c2fa64c7dce0f75c5e6af72d44abb4a353e194c8cca0bdb476f05a73d3f0",
+        "size_bytes": 225789,
+        "mtime": "2026-07-21",
+        "path": "14:22:00  ./PDFs/06-咨询录音脚本/脚本03-混乱4号-个人咨询-第12次.pdf",
+        "filename": "脚本03-混乱4号-个人咨询-第12次.pdf"
+      },
+      {
+        "sha256": "ee465d992ce35517dcedc6a4aeaac66805e0f73b434c04b6063984e47d48649f",
+        "size_bytes": 227568,
+        "mtime": "2026-07-21",
+        "path": "14:21:41  ./PDFs/05-构型深度展开/构型12-安全×3号成就型.pdf",
+        "filename": "构型12-安全×3号成就型.pdf"
+      },
+      {
+        "sha256": "8ff99fa597a07fc73a456f9664a12b36bff42361361ec91b3829118631fc343f",
+        "size_bytes": 227704,
+        "mtime": "2026-07-21",
+        "path": "14:23:03  ./PDFs/08-督导专题包/督导专题包-危机处理与转介指南.pdf",
+        "filename": "督导专题包-危机处理与转介指南.pdf"
+      },
+      {
+        "sha256": "eb7abc0cfb880af0f7ada1a1a628e2736590b9dd44fe0790a1e6f8f7b9a12792",
+        "size_bytes": 230074,
+        "mtime": "2026-07-21",
+        "path": "14:24:06  ./PDFs/10-客体关系专题包/客体关系专题包-主文档.pdf",
+        "filename": "客体关系专题包-主文档.pdf"
+      },
+      {
+        "sha256": "c1744d97e8e4470f0c7293a41c47f6c3e374dc486b95dfa6f1df9aec3ce62fdf",
+        "size_bytes": 232299,
+        "mtime": "2026-07-21",
+        "path": "14:23:59  ./PDFs/10-客体关系专题包/客体关系专题包-12构型内在图谱.pdf",
+        "filename": "客体关系专题包-12构型内在图谱.pdf"
+      },
+      {
+        "sha256": "8a38170e60c795b2411d0ed94b7683836494dfdcda826baa1b32245c22db3ccd",
+        "size_bytes": 242374,
+        "mtime": "2026-07-21",
+        "path": "14:23:09  ./PDFs/08-督导专题包/督导专题包-督导流程与记录模板.pdf",
+        "filename": "督导专题包-督导流程与记录模板.pdf"
+      },
+      {
+        "sha256": "ee643e224cdee66343dcefc17e0c4cadf13361e0346263e7100868b8f2f8db5d",
+        "size_bytes": 242475,
+        "mtime": "2026-07-21",
+        "path": "14:22:31  ./PDFs/07-咨询师自我校准/咨询师自我校准-反移情手册.pdf",
+        "filename": "咨询师自我校准-反移情手册.pdf"
+      },
+      {
+        "sha256": "faaebd330bc3fa282fcb50105355a6c7bcea87911135d888ce786af8c05fc31b",
+        "size_bytes": 244839,
+        "mtime": "2026-07-21",
+        "path": "14:23:22  ./PDFs/09-案例库/案例02-回避5号-M先生.pdf",
+        "filename": "案例02-回避5号-M先生.pdf"
+      },
+      {
+        "sha256": "bd42189726ca059c1463846a5080a0c1b111a654fbd472eaabf8785bac4d0e7c",
+        "size_bytes": 245729,
+        "mtime": "2026-07-21",
+        "path": "14:23:34  ./PDFs/09-案例库/案例04-伴侣咨询-焦虑6号与回避8号.pdf",
+        "filename": "案例04-伴侣咨询-焦虑6号与回避8号.pdf"
+      },
+      {
+        "sha256": "9c6a4bbddd7bbe06f8001a3a1ba2e5ce3d0065bdb58c898ff0568562aca9b0ee",
+        "size_bytes": 246016,
+        "mtime": "2026-07-21",
+        "path": "14:22:38  ./PDFs/07-咨询师自我校准/咨询师自我校准-耗竭识别与恢复.pdf",
+        "filename": "咨询师自我校准-耗竭识别与恢复.pdf"
+      },
+      {
+        "sha256": "8aba8f47aa4cb0d18cac94fd2f93ccdf1b33ed24fd9d324793bfd401f72d0a23",
+        "size_bytes": 246682,
+        "mtime": "2026-07-21",
+        "path": "14:23:15  ./PDFs/09-案例库/案例01-焦虑2号-L女士.pdf",
+        "filename": "案例01-焦虑2号-L女士.pdf"
+      },
+      {
+        "sha256": "7f3ca16d5c4d9ddb4a7f3ffd0aa01fa7b084512a6bb266660ac4d791291fc472",
+        "size_bytes": 250977,
+        "mtime": "2026-07-21",
+        "path": "14:20:38  ./PDFs/05-构型深度展开/构型02-焦虑×6号疑惑型.pdf",
+        "filename": "构型02-焦虑×6号疑惑型.pdf"
+      },
+      {
+        "sha256": "46c8b2838ff652976d27cf52c8a41b8dea774e985ed8ad8e2fd098d000bf45f3",
+        "size_bytes": 252171,
+        "mtime": "2026-07-21",
+        "path": "14:22:57  ./PDFs/08-督导专题包/督导专题包-主文档.pdf",
+        "filename": "督导专题包-主文档.pdf"
+      },
+      {
+        "sha256": "954853920aabe3cf39db8d29bc89e7191f1c351698dd9ed3e4b5e5c8c62d0d62",
+        "size_bytes": 253974,
+        "mtime": "2026-07-21",
+        "path": "14:22:25  ./PDFs/07-咨询师自我校准/咨询师自我校准-主文档.pdf",
+        "filename": "咨询师自我校准-主文档.pdf"
+      },
+      {
+        "sha256": "08f0c2cffef122939f4201e3ae22f28238bf1687b3385355a59ab28bb236fa67",
+        "size_bytes": 254145,
+        "mtime": "2026-07-21",
+        "path": "14:23:40  ./PDFs/09-案例库/案例05-伴侣咨询-焦虑2号与回避5号.pdf",
+        "filename": "案例05-伴侣咨询-焦虑2号与回避5号.pdf"
+      },
+      {
+        "sha256": "777cf7d8d81b8e306a918de40678396e5d696203540e4fc9e8affd9af08c54cb",
+        "size_bytes": 255158,
+        "mtime": "2026-07-21",
+        "path": "14:23:47  ./PDFs/09-案例库/案例06-求证型-陈女士.pdf",
+        "filename": "案例06-求证型-陈女士.pdf"
+      },
+      {
+        "sha256": "152c686b7b3c6c6f98239002c2936d860d56554f7cb15bf3d1d49f20b4f21c31",
+        "size_bytes": 257321,
+        "mtime": "2026-07-21",
+        "path": "14:20:32  ./PDFs/05-构型深度展开/构型01-焦虑×2号助人型.pdf",
+        "filename": "构型01-焦虑×2号助人型.pdf"
+      },
+      {
+        "sha256": "f038be1bcef05503b0f060da877964e2429d5062e1d2b0e5a1d84dfc632f0397",
+        "size_bytes": 258212,
+        "mtime": "2026-07-21",
+        "path": "14:20:26  ./PDFs/README.pdf",
+        "filename": "README.pdf"
+      },
+      {
+        "sha256": "54a4b2a07edacee1e2be30114eb9cb76babdab380ef2d9e15cd5fd6d3d731fff",
+        "size_bytes": 259211,
+        "mtime": "2026-07-21",
+        "path": "14:21:16  ./PDFs/05-构型深度展开/构型08-混乱×1号完美型.pdf",
+        "filename": "构型08-混乱×1号完美型.pdf"
+      },
+      {
+        "sha256": "34e967e8eca686b5f1d9b879d8d79a4708136e61213740aa7f94abff49da0f46",
+        "size_bytes": 262955,
+        "mtime": "2026-07-21",
+        "path": "14:23:28  ./PDFs/09-案例库/案例03-混乱4号-C女士.pdf",
+        "filename": "案例03-混乱4号-C女士.pdf"
+      },
+      {
+        "sha256": "6c70111e3e13e099169ec621803365b79543bf308add02873d17d55782ac2088",
+        "size_bytes": 272914,
+        "mtime": "2026-07-21",
+        "path": "14:21:03  ./PDFs/05-构型深度展开/构型06-回避×3号成就型.pdf",
+        "filename": "构型06-回避×3号成就型.pdf"
+      },
+      {
+        "sha256": "a3b7c76f4d28d07a6ee7fab0132525cae0cec0e00ce3cd5a47d8dbb4eb74138e",
+        "size_bytes": 273670,
+        "mtime": "2026-07-21",
+        "path": "14:24:49  ./PDFs/04-来访者自助手册.pdf",
+        "filename": "04-来访者自助手册.pdf"
+      },
+      {
+        "sha256": "12c00e531e31b234dee7df4e06cd910c8c4b62190d7303ea55fc9dca457d5a16",
+        "size_bytes": 274335,
+        "mtime": "2026-07-21",
+        "path": "14:20:57  ./PDFs/05-构型深度展开/构型05-回避×8号挑战型.pdf",
+        "filename": "构型05-回避×8号挑战型.pdf"
+      },
+      {
+        "sha256": "3e0a3bcf2f25f8f39650f04bd729b68635ed389958144715e30dff4050351ea2",
+        "size_bytes": 275482,
+        "mtime": "2026-07-21",
+        "path": "14:20:51  ./PDFs/05-构型深度展开/构型04-回避×5号观察型.pdf",
+        "filename": "构型04-回避×5号观察型.pdf"
+      },
+      {
+        "sha256": "c1e5bb05ddfe3cc42cb8648643e5d60d895100d8eb0717f0c22442383cdf33cd",
+        "size_bytes": 277402,
+        "mtime": "2026-07-21",
+        "path": "14:20:44  ./PDFs/05-构型深度展开/构型03-焦虑×4号浪漫型.pdf",
+        "filename": "构型03-焦虑×4号浪漫型.pdf"
+      },
+      {
+        "sha256": "320a2a54b1d012b9ba91004a34d9f56e6568ed937cdee16d94bb1c659daeddb5",
+        "size_bytes": 281604,
+        "mtime": "2026-07-21",
+        "path": "14:21:10  ./PDFs/05-构型深度展开/构型07-混乱×4号浪漫型.pdf",
+        "filename": "构型07-混乱×4号浪漫型.pdf"
+      },
+      {
+        "sha256": "d67a4634df7b7e6f2bcc2006a502c556ee7e40b976a94d9635fb5f1f234ee7f9",
+        "size_bytes": 440126,
+        "mtime": "2026-07-21",
+        "path": "14:35:08  ./PDFs/03-培训PPT/attachment-enneagram-consultation-training.pdf",
+        "filename": "attachment-enneagram-consultation-training.pdf"
+      },
+      {
+        "sha256": "0afae4650586df886c5e2b395cf2e639082823657da36eeca2957e57487dac00",
+        "size_bytes": 452665,
+        "mtime": "2026-07-21",
+        "path": "14:39:06  ./PDFs/01-理论架构与咨询指南.pdf",
+        "filename": "01-理论架构与咨询指南.pdf"
+      }
+    ],
+    "deliverable": [
+      {
+        "sha256": "4b4f60a18a15d9dc207a7b04dad55d2a437bfad3497aa6cf7c15e5ff76548215",
+        "size_bytes": 11015938,
+        "mtime": "2026-07-21",
+        "path": "11:52:02  ./依恋九型-情感咨询融合理论套件-v2.2-PDF合集.zip",
+        "filename": "依恋九型-情感咨询融合理论套件-v2.2-PDF合集.zip"
+      }
+    ]
+  }
+}
