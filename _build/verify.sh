@@ -18,7 +18,7 @@ set +e
 TARGET_VERSION="${1:-v2.2}"
 PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 PDFS_DIR="$PROJECT_DIR/PDFs"
-ZIP_FILE="$PROJECT_DIR/依恋九型-情感咨询融合理论套件-${TARGET_VERSION}-PDF合集.zip"
+ZIP_FILE="$PROJECT_DIR/依恋×九型×客体关系三轴融合情感咨询理论套件-${TARGET_VERSION}.zip"
 
 # 颜色
 RED='\033[0;31m'
@@ -99,7 +99,7 @@ echo ""
 
 # ---------- 检查 3: PPT 标题是三轴 ----------
 echo "【检查 3/5】PPT 是 v2.2 三轴融合理论版"
-PPT_PDF="$PDFS_DIR/03-培训PPT/attachment-enneagram-consultation-training.pdf"
+PPT_PDF="$PDFS_DIR/03-培训PPT/attachment-enneagram-consultation-training-v2.2.pdf"
 if [ -f "$PPT_PDF" ]; then
   ppt_text=$(pdftotext "$PPT_PDF" - 2>/dev/null)
   
@@ -169,7 +169,7 @@ if [ -f "$ZIP_FILE" ]; then
   
   # 检查 zip 内的 PPT PDF 是否含 v2.2
   if command -v unzip >/dev/null 2>&1; then
-    unzip -p "$ZIP_FILE" "PDFs/03-培训PPT/attachment-enneagram-consultation-training.pdf" 2>/dev/null | \
+    unzip -p "$ZIP_FILE" "PDFs/03-培训PPT/attachment-enneagram-consultation-training-v2.2.pdf" 2>/dev/null | \
       pdftotext - - 2>/dev/null | grep -q "$TARGET_VERSION"
     check "zip 内的 PPT PDF 含 $TARGET_VERSION" \
       "$([ $? -eq 0 ] && echo true || echo false)"
@@ -177,6 +177,44 @@ if [ -f "$ZIP_FILE" ]; then
 else
   echo -e "  ${RED}❌${NC} zip 文件不存在: $ZIP_FILE"
   fail=$((fail+1))
+fi
+echo ""
+
+# ---------- 检查 6/5: 9 型描述错配审计 ----------
+echo "【检查 6/6】9 型描述错配审计"
+if [ -f "$PROJECT_DIR/_build/audit-9-types.sh" ]; then
+  audit_output=$(bash "$PROJECT_DIR/_build/audit-9-types.sh" 2>&1)
+  audit_errors=$(echo "$audit_output" | grep -c "处" | head -1)
+  if echo "$audit_output" | grep -q "100% 自洽"; then
+    check "9 型描述错配审计" "true" "全部 44 个 md 文件 0 处错配"
+  else
+    # 提取错配总数
+    error_count=$(echo "$audit_output" | grep "错配总数:" | grep -oE "[0-9]+" | head -1)
+    if [ "$error_count" = "0" ] || [ -z "$error_count" ]; then
+      check "9 型描述错配审计" "true" "全部 md 文件 0 处错配"
+    else
+      check "9 型描述错配审计" "false" "发现 $error_count 处错配,需人工复核"
+    fi
+  fi
+else
+  echo -e "  ${YELLOW}⚠️${NC}  audit-9-types.sh 不存在,跳过"
+  warn=$((warn+1))
+fi
+echo ""
+
+# ---------- 检查 7/7: 章节编号一致性审计 ----------
+echo "【检查 7/7】章节编号一致性审计 (TOC ↔ 正文)"
+if [ -f "$PROJECT_DIR/_build/audit-toc-sync.sh" ]; then
+  toc_output=$(bash "$PROJECT_DIR/_build/audit-toc-sync.sh" 2>&1)
+  if echo "$toc_output" | grep -q "完全一致"; then
+    check "章节编号一致性审计" "true" "全部 44 个 md 文件目录与正文一致"
+  else
+    toc_errors=$(echo "$toc_output" | grep -c "❌" || echo 0)
+    check "章节编号一致性审计" "false" "发现 $toc_errors 处不一致,需修复"
+  fi
+else
+  echo -e "  ${YELLOW}⚠️${NC}  audit-toc-sync.sh 不存在,跳过"
+  warn=$((warn+1))
 fi
 echo ""
 

@@ -112,9 +112,9 @@ echo ""
 if [ "$DO_PACK" = "true" ]; then
   echo "【步骤 2/3】打包 zip"
   echo ""
-  rm -f "依恋九型-情感咨询融合理论套件-${TARGET_VERSION}-PDF合集.zip"
-  zip -qr "依恋九型-情感咨询融合理论套件-${TARGET_VERSION}-PDF合集.zip" PDFs/
-  ls -la "依恋九型-情感咨询融合理论套件-${TARGET_VERSION}-PDF合集.zip"
+  rm -f "依恋×九型×客体关系三轴融合情感咨询理论套件-${TARGET_VERSION}.zip"
+  zip -qr "依恋×九型×客体关系三轴融合情感咨询理论套件-${TARGET_VERSION}.zip" PDFs/
+  ls -la "依恋×九型×客体关系三轴融合情感咨询理论套件-${TARGET_VERSION}.zip"
   echo ""
 else
   echo "【步骤 2/3】打包 — 跳过(默认不打,需要时加 --pack)"
@@ -132,7 +132,7 @@ if [ "$DO_VERIFY" = "true" ]; then
   if [ $VERIFY_EXIT -eq 0 ]; then
     echo "=========================================="
     echo -e " \033[0;32m✅ 全部通过!交付物已就绪\033[0m"
-    [ "$DO_PACK" = "true" ] && echo " zip: 依恋九型-情感咨询融合理论套件-${TARGET_VERSION}-PDF合集.zip"
+    [ "$DO_PACK" = "true" ] && echo " zip: 依恋×九型×客体关系三轴融合情感咨询理论套件-${TARGET_VERSION}.zip"
     echo "=========================================="
     exit 0
   else
