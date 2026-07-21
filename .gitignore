@@ -26,3 +26,10 @@ yarn-error.log*
 # 用户配置
 .git-commit-msg.txt
 .git-remote-config.txt
+
+# Git bundle 不进 git(从 git 导出,本就不该在 git 里)
+*.bundle
+
+# 大文件不进 git(GitHub 100MB 限制 + 不应该把证据包和 git 一起追踪)
+_evidence/git-bundle-*.bundle
+_evidence/evidence-package-FULL-*.tar.gz
