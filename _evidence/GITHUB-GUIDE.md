@@ -98,8 +98,8 @@ git show --stat HEAD | tail -3
 ### 步骤 1: 在 GitHub 创建空仓库 (2 分钟)
 
 1. 打开 https://github.com/new
-2. **Repository name**: `attachment-enneagram-consultation-v2`
-3. **Description**: `依恋九型-情感咨询融合理论套件 v2.2 - 原创首发 2026-07-21`
+2. **Repository name**: `tri-axis-attachment-enneagram-framework-v2.2`
+3. **Description**: `依恋 × 九型 × 客体关系 三轴融合框架 v2.2 完整版 - 原创首发 2026-07-21`
 4. **Visibility**:
    - ⭐ **Public**(推荐 - 时间戳证据最强)
    - Private(如果你不想公开内容,但仍有私有 commit 时间戳)
@@ -112,7 +112,7 @@ git show --stat HEAD | tail -3
 cd /workspace/attachment-enneagram-consultation
 
 # 添加 GitHub 远程(替换成你的用户名)
-git remote add origin https://github.com/[你的用户名]/attachment-enneagram-consultation-v2.git
+git remote add origin https://github.com/[你的用户名]/tri-axis-attachment-enneagram-framework-v2.2.git
 
 # 推送
 git push -u origin main
@@ -126,7 +126,7 @@ git push -u origin main
 
 ### 步骤 3: 验证推送成功 (1 分钟)
 
-访问 `https://github.com/[你的用户名]/attachment-enneagram-consultation-v2`
+访问 `https://github.com/[你的用户名]/tri-axis-attachment-enneagram-framework-v2.2`
 
 应该看到:
 - ✅ 93 个文件
@@ -142,10 +142,11 @@ git push -u origin main
 ### 步骤 1: 在 Gitee 创建空仓库
 
 1. 打开 https://gitee.com/projects/new
-2. **仓库名称**: `attachment-enneagram-consultation-v2`
-3. **是否开源**: 选"公开"(推荐)
-4. 不要勾选其他选项
-5. 点 **创建**
+2. **仓库名称**: `tri-axis-attachment-enneagram-framework-v2.2`
+3. **仓库介绍**: `依恋 × 九型 × 客体关系 三轴融合框架 v2.2 完整版 - 原创首发 2026-07-21`
+4. **是否开源**: 选"公开"(推荐)
+5. 不要勾选其他选项
+6. 点 **创建**
 
 ### 步骤 2: 推送
 
@@ -153,7 +154,7 @@ git push -u origin main
 cd /workspace/attachment-enneagram-consultation
 
 # 添加 Gitee 远程
-git remote add gitee https://gitee.com/[你的用户名]/attachment-enneagram-consultation-v2.git
+git remote add gitee https://gitee.com/[你的用户名]/tri-axis-attachment-enneagram-framework-v2.2.git
 
 # 推送
 git push -u gitee main

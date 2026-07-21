@@ -99,8 +99,10 @@ git push -u gitee main
 | 本地 Git 仓库 | ✅ 完成 | 中-高 |
 | **Git Bundle(独立可传)** | ✅ **完成** | **中-高** |
 | 邮件自存(下一步) | ⏳ 待做 | 中 |
-| GitHub Public Commit(下一步) | ⏳ 待做 | 高 |
+| **GitHub Public Commit(下一步)** | ⏳ 待做 | 高 |
+| **仓库名: `tri-axis-attachment-enneagram-framework-v2.2`** | | |
 | Gitee Public Commit(下一步) | ⏳ 待做 | 高(国内) |
+| **仓库名: `tri-axis-attachment-enneagram-framework-v2.2`** | | |
 | 区块链存证(可选) | 📋 后续 | 极高 |
 | 中国版权中心登记(可选) | 📋 后续 | 法律推定 |
 
