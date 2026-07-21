@@ -5,8 +5,8 @@
     "evidence_generated_at": "2026-07-21T22:55:00+08:00",
     "evidence_timezone": "Asia/Shanghai",
     "total_files": 93,
-    "total_size_bytes": 23264034,
-    "root_hash": "a5678ee8597caf723163c31136490bb7d246d1079bb942cb768f07e7b906b883",
+    "total_size_bytes": 23263759,
+    "root_hash": "9e2fa0bac4a817921cd4cb8fa3d6b0f47253074b02d3a5401604e266be37fdba",
     "root_hash_algorithm": "SHA-256",
     "evidence_chain_method": "email + git + (optional) blockchain"
   },
@@ -29,10 +29,10 @@
   "file_groups": {
     "top_level_md": [
       {
-        "sha256": "5187fefb7d4586891129ffcef21e03e1352487c1a351a113bed60a2d16a848d1",
-        "size_bytes": 67397,
+        "sha256": "be0ceee9ea25945a460cdb92367acc8a793c7908cf5c848d80ed16abb06b3053",
+        "size_bytes": 67542,
         "mtime": "2026-07-21",
-        "path": "17:56:44  ./01-理论架构与咨询指南.md",
+        "path": "18:12:26  ./01-理论架构与咨询指南.md",
         "filename": "01-理论架构与咨询指南.md"
       },
       {
@@ -43,10 +43,10 @@
         "filename": "02-咨询师速查工具卡.md"
       },
       {
-        "sha256": "29f1167bedd16fbae3b9190405592cdf12f85f5e430037bec560f7aafbb212bb",
-        "size_bytes": 33686,
+        "sha256": "e597efc310489e68404bdb3a060fb896f05704dad1597f197cd02b75572a6f28",
+        "size_bytes": 33814,
         "mtime": "2026-07-21",
-        "path": "17:56:48  ./README.md",
+        "path": "18:12:22  ./README.md",
         "filename": "README.md"
       }
     ],
@@ -651,10 +651,10 @@
     ],
     "pdfs": [
       {
-        "sha256": "d06365357e5ea3ae8365357e4702ff5ee9e4c194612334def2b9681ce4e62d87",
-        "size_bytes": 450050,
+        "sha256": "f34123e024f64cd14d67041b3388fc11cfa8ec378d1d263a9ca972d27ecfa7b6",
+        "size_bytes": 452524,
         "mtime": "2026-07-21",
-        "path": "18:06:21  ./PDFs/01-理论架构与咨询指南.pdf",
+        "path": "18:12:45  ./PDFs/01-理论架构与咨询指南.pdf",
         "filename": "01-理论架构与咨询指南.pdf"
       },
       {
@@ -975,10 +975,10 @@
     ],
     "deliverable": [
       {
-        "sha256": "602e20dde9b12f55a24282f8ec12ec68b19f1712be4851a74fbe2ec803b92ba8",
-        "size_bytes": 10962758,
+        "sha256": "1dcaea9e7bb28d65c15b0bf24e362b92b8db2e881bc23400d5832507683d72c3",
+        "size_bytes": 10959736,
         "mtime": "2026-07-21",
-        "path": "17:45:06  ./依恋九型-情感咨询融合理论套件-v2.2-PDF合集.zip",
+        "path": "18:06:30  ./依恋九型-情感咨询融合理论套件-v2.2-PDF合集.zip",
         "filename": "依恋九型-情感咨询融合理论套件-v2.2-PDF合集.zip"
       }
     ]
