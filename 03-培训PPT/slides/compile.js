@@ -16,7 +16,7 @@ const theme = {
   bg: 'faf6f1'          // warm cream
 };
 
-for (let i = 1; i <= 26; i++) {
+for (let i = 1; i <= 27; i++) {
   const num = i.toString().padStart(2, '0');
   const mod = require('./slide-' + num + '.js');
   mod.createSlide(pres, theme);

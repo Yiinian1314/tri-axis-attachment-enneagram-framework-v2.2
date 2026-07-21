@@ -17,7 +17,7 @@ tar czf /tmp/evidence-package-v2.2-20260721.tar.gz \
   README.md \
   01-理论架构与咨询指南.md \
   02-咨询师速查工具卡.md \
-  依恋九型-情感咨询融合理论套件-v2.2-PDF合集.zip
+  依恋×九型×客体关系三轴融合情感咨询理论套件-v2.2.zip
 
 # 计算这个证据包自己的 SHA-256(以备对比)
 sha256sum /tmp/evidence-package-v2.2-20260721.tar.gz
@@ -128,4 +128,4 @@ _evidence/
 
 ---
 
-**生成时间**: 2026-07-21 22:55 (Asia/Shanghai)
+**生成时间**: 2026-07-22 04:20 (Asia/Shanghai)

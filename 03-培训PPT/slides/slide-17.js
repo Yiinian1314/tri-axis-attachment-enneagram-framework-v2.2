@@ -1,90 +1,86 @@
-// Slide 17: Five-Stage Process
+// Slide 17: Six-Stage Tri-Axis Process
 function createSlide(pres, theme) {
   const slide = pres.addSlide();
   slide.background = { color: theme.bg };
 
-  slide.addText('五阶段咨询流程', {
+  slide.addText('6 阶段三轴递进路径', {
     x: 0.5, y: 0.4, w: 9, h: 0.6,
     fontSize: 30, fontFace: 'Microsoft YaHei', bold: true,
     color: theme.primary
   });
-  slide.addText('Five-Stage Consultation Process', {
+  slide.addText('Six-Stage Tri-Axis Progressive Path', {
     x: 0.5, y: 1.0, w: 9, h: 0.3,
     fontSize: 12, fontFace: 'Arial', italic: true,
     color: theme.accent, charSpacing: 3
   });
 
-  // 5-stage timeline
+  // 6-stage timeline (从依恋到三轴并用)
   const stages = [
-    { n: '01', title: '建立关系与评估', sub: '1-3 次', desc: '收集双轴信息, 建立安全基地, 协商咨询目标' },
-    { n: '02', title: '看见模式与触发', sub: '4-8 次', desc: '命名激活模式, 建立预警信号, 触碰早期剧本' },
-    { n: '03', title: '哀悼与重建', sub: '9-15 次', desc: '哀悼理想化依恋对象, 看见核心恐惧根源' },
-    { n: '04', title: '新经验与整合', sub: '16-25 次', desc: '矫正性情感经验, 整合依恋修复与九型成长' },
-    { n: '05', title: '维护与成长', sub: '长期', desc: '巩固整合, 处理成长痛, 转向自我主导' }
+    { n: '01', title: '建立关系', sub: '1-3 次', axis: '依恋为主', desc: '建立安全基地, 让来访者开始"重复"给你看' },
+    { n: '02', title: '看见模式', sub: '4-8 次', axis: '依恋+九型', desc: '识别激活模式 + 防御位' },
+    { n: '03', title: '看见动力', sub: '9-15 次', axis: '九型+客体', desc: '核心恐惧暴露 + 反移情浮现' },
+    { n: '04', title: '修补结构', sub: '16-25 次', axis: '客体为主', desc: '破裂-修复循环, 修补内在图' },
+    { n: '05', title: '巩固整合', sub: '26-40 次', axis: '三轴同步', desc: '三轴并用检验, 处理增长痛' },
+    { n: '06', title: '维护结案', sub: '长期', axis: '三轴并用', desc: '渐退频率, 内化咨询师' }
   ];
 
   stages.forEach((s, i) => {
-    const x = 0.5 + i * 1.85;
+    const x = 0.4 + i * 1.55;
     // Card
     slide.addShape(pres.shapes.RECTANGLE, {
-      x: x, y: 1.7, w: 1.75, h: 3.0,
+      x: x, y: 1.7, w: 1.45, h: 3.2,
       fill: { color: 'FFFFFF' }, line: { color: theme.light, width: 1 }
     });
     // Top accent
     slide.addShape(pres.shapes.RECTANGLE, {
-      x: x, y: 1.7, w: 1.75, h: 0.4,
+      x: x, y: 1.7, w: 1.45, h: 0.4,
       fill: { color: theme.primary }, line: { type: 'none' }
     });
     slide.addText(s.n, {
-      x: x, y: 1.75, w: 1.75, h: 0.3,
+      x: x, y: 1.75, w: 1.45, h: 0.3,
       fontSize: 14, fontFace: 'Arial', bold: true,
       color: theme.accent, align: 'center'
     });
     // Title
     slide.addText(s.title, {
-      x: x + 0.1, y: 2.2, w: 1.55, h: 0.7,
+      x: x + 0.05, y: 2.18, w: 1.35, h: 0.45,
       fontSize: 12, fontFace: 'Microsoft YaHei', bold: true,
-      color: theme.primary, lineSpacingMultiple: 1.2
+      color: theme.primary, lineSpacingMultiple: 1.1
     });
-    // Sub
+    // Sub (次数)
     slide.addText(s.sub, {
-      x: x + 0.1, y: 2.95, w: 1.55, h: 0.3,
-      fontSize: 10, fontFace: 'Microsoft YaHei',
+      x: x + 0.05, y: 2.65, w: 1.35, h: 0.25,
+      fontSize: 9, fontFace: 'Microsoft YaHei',
       color: theme.accent
+    });
+    // Axis (主轴)
+    slide.addText(s.axis, {
+      x: x + 0.05, y: 2.92, w: 1.35, h: 0.3,
+      fontSize: 10, fontFace: 'Microsoft YaHei', bold: true,
+      color: theme.primary
     });
     // Desc
     slide.addText(s.desc, {
-      x: x + 0.1, y: 3.3, w: 1.55, h: 1.3,
-      fontSize: 9, fontFace: 'Microsoft YaHei',
-      color: theme.secondary, lineSpacingMultiple: 1.3
+      x: x + 0.05, y: 3.25, w: 1.35, h: 1.5,
+      fontSize: 8, fontFace: 'Microsoft YaHei',
+      color: theme.secondary, lineSpacingMultiple: 1.2
     });
-
-    // Arrow between
-    if (i < stages.length - 1) {
-      slide.addShape(pres.shapes.RIGHT_TRIANGLE, {
-        x: x + 1.78, y: 3.05, w: 0.1, h: 0.2,
-        fill: { color: theme.accent }, line: { type: 'none' },
-        rotate: 90
-      });
-    }
   });
 
   // Bottom note
-  slide.addShape(pres.shapes.RECTANGLE, {
-    x: 0.5, y: 4.85, w: 9, h: 0.3,
-    fill: { color: theme.bg }, line: { type: 'none' }
-  });
-  slide.addText('原则: 触碰核心恐惧前,先确保安全基地够稳——顺序颠倒会复制早年创伤而非修复', {
-    x: 0.7, y: 4.85, w: 8.6, h: 0.3,
+  slide.addText('三轴递进路径(身体层→动力层→结构层), 主轴从依恋逐级到三轴并用, 缺一不可', {
+    x: 0.4, y: 5.1, w: 9.2, h: 0.4,
     fontSize: 11, fontFace: 'Microsoft YaHei', italic: true,
-    color: theme.secondary
+    color: theme.primary, align: 'center'
   });
 
-  slide.addText('17', {
-    x: 9.3, y: 5.1, w: 0.5, h: 0.3,
-    fontSize: 10, fontFace: 'Arial',
-    color: theme.secondary, align: 'right'
+  // Brand watermark
+  slide.addText('一念三轴 · Yiinian Triaxis (v2.2)', {
+    x: 6.5, y: 5.35, w: 3.0, h: 0.25,
+    fontSize: 9, fontFace: 'Microsoft YaHei',
+    color: theme.accent, align: 'right'
   });
+
 }
 
 module.exports = { createSlide };

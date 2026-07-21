@@ -21,7 +21,7 @@ function createSlide(pres, theme) {
     color: theme.light
   });
 
-  slide.addText('五阶段流程 + 核心干预技术', {
+  slide.addText('6 阶段三轴递进路径 · 11 核心技术', {
     x: 4, y: 3.3, w: 5.5, h: 0.4,
     fontSize: 14, fontFace: 'Microsoft YaHei',
     color: theme.light
@@ -37,6 +37,14 @@ function createSlide(pres, theme) {
     fontSize: 10, fontFace: 'Arial',
     color: theme.light, align: 'right'
   });
+
+  // Brand watermark
+  slide.addText('一念三轴 · Yiinian Triaxis (v2.2)', {
+    x: 6.5, y: 5.35, w: 3.0, h: 0.25,
+    fontSize: 9, fontFace: 'Microsoft YaHei',
+    color: theme.accent, align: 'right'
+  });
+
 }
 
 module.exports = { createSlide };

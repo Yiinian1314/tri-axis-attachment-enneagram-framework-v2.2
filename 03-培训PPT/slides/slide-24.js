@@ -100,6 +100,14 @@ function createSlide(pres, theme) {
     fontSize: 10, fontFace: 'Arial',
     color: theme.secondary, align: 'right'
   });
+
+  // Brand watermark
+  slide.addText('一念三轴 · Yiinian Triaxis (v2.2)', {
+    x: 6.5, y: 5.35, w: 3.0, h: 0.25,
+    fontSize: 9, fontFace: 'Microsoft YaHei',
+    color: theme.accent, align: 'right'
+  });
+
 }
 
 module.exports = { createSlide };

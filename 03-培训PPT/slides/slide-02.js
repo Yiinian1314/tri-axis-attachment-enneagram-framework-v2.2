@@ -95,7 +95,7 @@ function createSlide(pres, theme) {
     fontSize: 18, fontFace: 'Microsoft YaHei', bold: true,
     color: theme.primary
   });
-  slide.addText('五阶段流程 · 核心技术', {
+  slide.addText('6 阶段流程 · 11 核心技术', {
     x: 6.3, y: 2.18, w: 4, h: 0.3,
     fontSize: 11, fontFace: 'Microsoft YaHei',
     color: theme.secondary
