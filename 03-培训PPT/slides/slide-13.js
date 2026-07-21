@@ -36,7 +36,7 @@ function createSlide(pres, theme) {
       { text: '依恋', options: headerStyle },
       { text: '九型(高度亲和)', options: headerStyle },
       { text: '九型(中度)', options: headerStyle },
-      { text: '客体关系维度(v2.2 新增)', options: headerStyle },
+      { text: '自体-客体表征(v2.2 新增)', options: headerStyle },
       { text: '内在逻辑', options: headerStyle }
     ],
     [
@@ -81,7 +81,7 @@ function createSlide(pres, theme) {
     x: 0.4, y: 4.55, w: 9.2, h: 0.55,
     fill: { color: theme.accent }, line: { type: 'none' }
   });
-  slide.addText('v2.2 升级:从双轴 → 三轴。 客体关系维度(内在图 / 投射性认同)是修补结构的关键,比动力/行为更长效', {
+  slide.addText('v2.2 升级:从双轴 → 三轴。 自体-客体表征(内在图 / 投射性认同)是修补结构的关键,比动力/行为更长效', {
     x: 0.5, y: 4.6, w: 9.0, h: 0.45,
     fontSize: 11, fontFace: 'Microsoft YaHei', bold: true,
     color: 'FFFFFF'
